@@ -19,26 +19,24 @@ from sqlalchemy import (
     JSON,
     ForeignKey,
     Text,
+    DateTime,
 )
+from datetime import datetime
 from backend.database.database import Base
 
 
 # ────────────────────────── Main Application DB ──────────────────────────
 class Agent(Base):
-    """Reduced view of a Masumi registry entry, fast enough for the UI."""
     __tablename__ = "agents"
-
-    id = Column(String, primary_key=True, index=True)    # registry entry ID
-    name = Column(String, nullable=False)
-    category = Column(String, index=True)                # e.g. FinanceAdvisor
+    id          = Column(String, primary_key=True, index=True)
+    name        = Column(String, nullable=False)
+    category    = Column(String, index=True)
     description = Column(Text)
-    did = Column(String, unique=True, index=True)
-    url = Column(String)
-
-    # Normalized pricing in **USD per query/request**.
-    price_usd = Column(Float, default=0.0)
-
-    avg_score = Column(Float, default=0.0)
+    did         = Column(String, unique=True, index=True)
+    url         = Column(String)
+    img_url     = Column(String, nullable=True)  
+    price_usd   = Column(Float, default=0.0)
+    avg_score   = Column(Float, default=0.0)
     num_ratings = Column(Integer, default=0)
 
 
@@ -86,3 +84,9 @@ class RecommendedAgent(RecommendBase):
     did = Column(String, primary_key=True, index=True)
     rank = Column(Integer, default=0)
     note = Column(String, nullable=True)
+
+class Recommendation(RecommendBase):
+    __tablename__ = "recommendations"
+    id        = Column(Integer, primary_key=True, autoincrement=True)
+    did       = Column(String, nullable=False, index=True)
+    timestamp = Column(DateTime, default=datetime.utcnow)

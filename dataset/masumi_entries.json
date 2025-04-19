@@ -3,7 +3,7 @@
     "entries": [
       {
         "name": "FinanceAdvisor-1",
-        "description": "Real\u2011time stock quotes and buy/sell recommendations.",
+        "description": "Real‑time stock quotes and buy/sell recommendations.",
         "status": "Online",
         "RegistrySource": {
           "id": "5235cf72-fa2a-4e61-b9d5-42a85dd2169e",
@@ -27,12 +27,12 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-1.png",
+        "image": "./dataset/image/i_0.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
           "finance",
-          "Real\u2011time",
+          "Real‑time",
           "stock"
         ],
         "termsAndCondition": "https://fincorp.ai/terms",
@@ -56,7 +56,7 @@
       },
       {
         "name": "FinanceAdvisor-2",
-        "description": "Macro\u2011economic indicator analysis and strategy suggestions.",
+        "description": "Macro‑economic indicator analysis and strategy suggestions.",
         "status": "Online",
         "RegistrySource": {
           "id": "0428b0f7-d55d-4463-87e5-6bf0cf733a52",
@@ -80,12 +80,12 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-2.png",
+        "image": "./dataset/image/i_1.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
           "finance",
-          "Macro\u2011economic",
+          "Macro‑economic",
           "indicator"
         ],
         "termsAndCondition": "https://fincorp.ai/terms",
@@ -133,7 +133,7 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-3.png",
+        "image": "./dataset/image/i_2.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
@@ -186,7 +186,7 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-4.png",
+        "image": "./dataset/image/i_3.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
@@ -239,7 +239,7 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-5.png",
+        "image": "./dataset/image/i_4.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
@@ -292,7 +292,7 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-6.png",
+        "image": "./dataset/image/i_5.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
@@ -345,7 +345,7 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-7.png",
+        "image": "./dataset/image/i_6.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
@@ -398,7 +398,7 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-8.png",
+        "image": "./dataset/image/i_7.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
@@ -451,7 +451,7 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-9.png",
+        "image": "./dataset/image/i_8.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
@@ -480,7 +480,7 @@
       },
       {
         "name": "FinanceAdvisor-10",
-        "description": "Retirement planning and cash\u2011flow simulation.",
+        "description": "Retirement planning and cash‑flow simulation.",
         "status": "Online",
         "RegistrySource": {
           "id": "851a8f4f-a670-40d5-8838-4f83710dc2e1",
@@ -504,7 +504,7 @@
           }
         },
         "authorName": "FinCorp",
-        "image": "https://fincorp.ai/images/financeadvisor-10.png",
+        "image": "./dataset/image/i_9.png",
         "otherLegal": null,
         "privacyPolicy": "https://fincorp.ai/privacy",
         "tags": [
@@ -557,7 +557,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-1.png",
+        "image": "./dataset/image/i_10.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -608,7 +608,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-2.png",
+        "image": "./dataset/image/i_11.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -659,7 +659,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-3.png",
+        "image": "./dataset/image/i_12.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -710,7 +710,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-4.png",
+        "image": "./dataset/image/i_13.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -761,7 +761,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-5.png",
+        "image": "./dataset/image/i_14.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -812,7 +812,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-6.png",
+        "image": "./dataset/image/i_15.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -863,7 +863,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-7.png",
+        "image": "./dataset/image/i_16.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -914,7 +914,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-8.png",
+        "image": "./dataset/image/i_17.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -965,7 +965,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-9.png",
+        "image": "./dataset/image/i_18.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -992,7 +992,7 @@
       },
       {
         "name": "HealthAssistant-10",
-        "description": "Vaccination and check\u2011up reminders.",
+        "description": "Vaccination and check‑up reminders.",
         "status": "Online",
         "RegistrySource": {
           "id": "a37df90c-b27d-4eba-baef-40ba34e595c4",
@@ -1016,7 +1016,7 @@
           }
         },
         "authorName": "HealthAI",
-        "image": "https://healthai.ai/images/healthassistant-10.png",
+        "image": "./dataset/image/i_19.png",
         "otherLegal": null,
         "privacyPolicy": "https://healthai.ai/privacy",
         "tags": [
@@ -1067,7 +1067,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-1.png",
+        "image": "./dataset/image/i_20.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1118,7 +1118,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-2.png",
+        "image": "./dataset/image/i_21.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1169,7 +1169,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-3.png",
+        "image": "./dataset/image/i_22.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1220,7 +1220,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-4.png",
+        "image": "./dataset/image/i_23.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1271,7 +1271,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-5.png",
+        "image": "./dataset/image/i_24.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1322,7 +1322,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-6.png",
+        "image": "./dataset/image/i_25.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1349,7 +1349,7 @@
       },
       {
         "name": "TravelPlanner-7",
-        "description": "7\u2011day weather forecast for any destination.",
+        "description": "7‑day weather forecast for any destination.",
         "status": "Online",
         "RegistrySource": {
           "id": "3b784673-0956-4344-b1c0-65fa7f2ee696",
@@ -1373,7 +1373,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-7.png",
+        "image": "./dataset/image/i_26.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1424,7 +1424,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-8.png",
+        "image": "./dataset/image/i_27.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1475,7 +1475,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-9.png",
+        "image": "./dataset/image/i_28.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1526,7 +1526,7 @@
           }
         },
         "authorName": "TripWise",
-        "image": "https://tripwise.ai/images/travelplanner-10.png",
+        "image": "./dataset/image/i_29.png",
         "otherLegal": null,
         "privacyPolicy": "https://tripwise.ai/privacy",
         "tags": [
@@ -1577,7 +1577,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-1.png",
+        "image": "./dataset/image/i_30.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -1628,7 +1628,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-2.png",
+        "image": "./dataset/image/i_31.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -1679,7 +1679,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-3.png",
+        "image": "./dataset/image/i_32.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -1730,7 +1730,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-4.png",
+        "image": "./dataset/image/i_33.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -1781,7 +1781,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-5.png",
+        "image": "./dataset/image/i_34.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -1832,7 +1832,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-6.png",
+        "image": "./dataset/image/i_35.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -1859,7 +1859,7 @@
       },
       {
         "name": "CodeAssistant-7",
-        "description": "Integrates third\u2011party APIs into codebase.",
+        "description": "Integrates third‑party APIs into codebase.",
         "status": "Online",
         "RegistrySource": {
           "id": "61917270-ba86-4409-8b47-854785530169",
@@ -1883,7 +1883,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-7.png",
+        "image": "./dataset/image/i_36.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -1934,7 +1934,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-8.png",
+        "image": "./dataset/image/i_37.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -1985,7 +1985,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-9.png",
+        "image": "./dataset/image/i_38.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -2036,7 +2036,7 @@
           }
         },
         "authorName": "DevBuddy",
-        "image": "https://devbuddy.ai/images/codeassistant-10.png",
+        "image": "./dataset/image/i_39.png",
         "otherLegal": null,
         "privacyPolicy": "https://devbuddy.ai/privacy",
         "tags": [
@@ -2063,7 +2063,7 @@
       },
       {
         "name": "EducationTutor-1",
-        "description": "Step\u2011by\u2011step math problem solver.",
+        "description": "Step‑by‑step math problem solver.",
         "status": "Online",
         "RegistrySource": {
           "id": "61963161-ea8c-4869-959d-aac9d696cb39",
@@ -2087,7 +2087,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-1.png",
+        "image": "./dataset/image/i_40.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [
@@ -2138,7 +2138,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-2.png",
+        "image": "./dataset/image/i_41.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [
@@ -2189,7 +2189,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-3.png",
+        "image": "./dataset/image/i_42.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [
@@ -2240,7 +2240,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-4.png",
+        "image": "./dataset/image/i_43.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [
@@ -2291,7 +2291,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-5.png",
+        "image": "./dataset/image/i_44.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [
@@ -2342,7 +2342,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-6.png",
+        "image": "./dataset/image/i_45.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [
@@ -2393,7 +2393,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-7.png",
+        "image": "./dataset/image/i_46.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [
@@ -2444,7 +2444,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-8.png",
+        "image": "./dataset/image/i_47.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [
@@ -2495,7 +2495,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-9.png",
+        "image": "./dataset/image/i_48.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [
@@ -2546,7 +2546,7 @@
           }
         },
         "authorName": "TutorMe",
-        "image": "https://tutorme.ai/images/educationtutor-10.png",
+        "image": "./dataset/image/i_49.png",
         "otherLegal": null,
         "privacyPolicy": "https://tutorme.ai/privacy",
         "tags": [

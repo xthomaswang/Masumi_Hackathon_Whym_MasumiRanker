@@ -16,7 +16,9 @@ from pydantic import BaseModel, Field, ConfigDict
 from sqlalchemy.orm import Session
 
 from backend.database.database import SessionLocal
-from backend.database.models import Agent, Rating, RegistryEntry
+from backend.database.models import Agent, Rating, RegistryEntry, Recommendation
+from backend.database.recommend_db import SessionRecommend
+
 
 router = APIRouter(tags=["ranker"])
 
@@ -55,7 +57,8 @@ class AgentOut(BaseModel):
     description: str
     did: str
     url: str
-    price_usd: float              # ← NEW
+    img_url: str | None = None     
+    price_usd: float
     avg_score: float
     num_ratings: int
 
@@ -192,3 +195,23 @@ def payment_info(
     if not row:
         raise HTTPException(status_code=404, detail="Entry not found")
     return {"data": row.full_json, "status": "success"}
+
+
+@router.post("/recommendations", status_code=201)
+def add_recommendation(
+    did: str = Body(..., embed=True, min_length=3),
+    db: Session = Depends(get_db),
+):
+    if not agent_id_from_did(db, did):
+        raise HTTPException(status_code=404, detail="DID not found")
+
+    rec_session = SessionRecommend()
+    try:
+        rec = Recommendation(did=did)          
+        rec_session.add(rec)
+        rec_session.commit()
+        rec_session.refresh(rec)
+    finally:
+        rec_session.close()
+
+    return {"status": "success", "did": did, "timestamp": rec.timestamp.isoformat()}

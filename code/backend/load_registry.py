@@ -81,6 +81,7 @@ def main() -> None:
                 agent.did         = entry["did"]
                 agent.url         = entry["apiBaseUrl"]
                 agent.price_usd   = price_usd
+                agent.img_url     = entry["image"]
             else:
                 # insert new record
                 db.add(
@@ -92,6 +93,7 @@ def main() -> None:
                         did         = entry["did"],
                         url         = entry["apiBaseUrl"],
                         price_usd   = price_usd,
+                        img_url     = entry["image"]
                     )
                 )
 
