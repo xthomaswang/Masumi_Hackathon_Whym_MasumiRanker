@@ -38,6 +38,7 @@
   transition: margin-left 0.3s ease-in-out;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .sb-sidenav-toggled #layoutSidenav_content {
@@ -183,7 +184,7 @@ footer.site-footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f5d3d3;
+  background-color: #d3f5d4;
   padding: 1.5rem;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -368,3 +369,50 @@ footer.site-footer {
   color: #888;
   font-size: 0.95rem;
 }
+
+
+
+/* Example App.css rules */
+.modal-overlay {
+  position: absolute; /* 固定定位 */
+  top: 0;
+  left: 0;
+  width: 100%;  
+  height: 100%;   /* 铺满全屏 */
+  background-color: rgba(0, 0, 0, 0.7); /* 半透明黑色背景 */
+  display: flex; /* 用于居中内容 */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* 确保在最上层 */
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative; /* Important for close button positioning */
+  min-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  line-height: 1;
+  padding: 5px;
+  color: #555; /* Example color */
+}
+
+.modal-close-button:hover {
+  color: #000;
+}
+
+/* Add any other styles you need for the modal content */
