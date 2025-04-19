@@ -4,7 +4,8 @@ import axios from 'axios';
 // --- Define Base URL ---
 // TODO: Move the fallback URL to an environment variable (.env file)
 // Example .env file content: REACT_APP_API_BASE_URL=https://your-ngrok-or-deploy-url.com
-const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://cec0-107-200-17-1.ngrok-free.app"; // Fallback
+// vvv-- ADD 'export' Keyword Here --vvv
+export const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || "https://cec0-107-200-17-1.ngrok-free.app"; // Fallback
 
 // --- Create Axios Instance ---
 const apiClient = axios.create({
@@ -17,13 +18,7 @@ const apiClient = axios.create({
   // timeout: 10000, // Optional timeout
 });
 
-// --- Optional: Interceptors (Advanced: for global error handling, etc.) ---
-// apiClient.interceptors.response.use(
-//   response => response,
-//   error => {
-//     console.error('API Error:', error.response || error);
-//     return Promise.reject(error);
-//   }
-// );
+// --- Optional: Interceptors ---
+// ... (interceptors code if you have it) ...
 
-export default apiClient; // Export the configured instance
+export default apiClient; // Export the configured instance (this part is correct)

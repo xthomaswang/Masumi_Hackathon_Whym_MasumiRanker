@@ -1,4 +1,5 @@
 import React from 'react';
+import { API_BASE_URL } from '../api/axiosInstance';
 import { Link } from 'react-router-dom';
 
 const Agents = ({ agents = [] }) => {
@@ -32,7 +33,7 @@ const Agents = ({ agents = [] }) => {
                 <div className="img" style={{ marginRight: '15px' }}>
                   <img
                     // TODO: Consider using an environment variable for the base URL
-                    src={`https://cec0-107-200-17-1.ngrok-free.app${agent.img_url || ''}`}
+                    src={`${API_BASE_URL}${agent.img_url || ''}`}
                     alt={`${agent.name || 'Agent'} icon`}
                     style={{ width: '60px', height: '60px', borderRadius: '50%', objectFit: 'cover', backgroundColor: '#e0e0e0' /* Placeholder bg */ }}
                     onError={(e) => {

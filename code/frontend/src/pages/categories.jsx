@@ -2,6 +2,7 @@ import React, { useState, useEffect, useMemo } from 'react';
 import Agents from "../component/agents"; // Your component to display a list of agents
 import { useAgentsContext } from '../context'; // Context for main agent list
 import { Link } from 'react-router-dom';    // For navigation links
+import { API_BASE_URL } from '../api/axiosInstance';
 import axios from 'axios';                  // For fetching data
 
 // Optional: Import CSS for styling components like .categories-tag
@@ -9,7 +10,6 @@ import axios from 'axios';                  // For fetching data
 
 // --- Configuration ---
 // TODO: Move API Base URL to an environment variable (.env file) for better deployment
-const API_BASE_URL = "https://cec0-107-200-17-1.ngrok-free.app";
 
 const Categories = () => {
   // --- State and Context ---

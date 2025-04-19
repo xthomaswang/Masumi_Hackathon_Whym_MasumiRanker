@@ -1,101 +1,131 @@
-import React, { useState, useEffect } from 'react'; // Import useState and useEffect
+// src/pages/detail.jsx
+import React, { useState, useEffect, useMemo } from 'react'; // Import useMemo
 import { useParams } from 'react-router-dom';
-import { useAgentsContext } from '../context'; // Adjust path if necessary
-import axios from 'axios'; // Import axios for making HTTP requests
+import apiClient from '../api/axiosInstance'; // Import the configured apiClient
+import axios from 'axios'; // Import axios for specific checks like isCancel
 
 // Optional: Import CSS for styling
 // import './Detail.css';
 
-// --- Base URL for the API - TODO: Move to environment variable ---
-const API_BASE_URL = "https://cec0-107-200-17-1.ngrok-free.app";
-
 const Detail = () => {
-  // Get the 'id' parameter from the URL (Agent's primary ID)
-  const { id } = useParams();
-  // Get the main agent list context data
-  const { agents, loading: agentsLoading, error: agentsError } = useAgentsContext();
+  const { id } = useParams(); // Agent ID from URL
 
-  // --- State specifically for Reviews ---
-  const [reviews, setReviews] = useState([]);
-  const [reviewsLoading, setReviewsLoading] = useState(false); // Start as false, set true when fetching
-  const [reviewsError, setReviewsError] = useState(null);
+  // --- State for Agent Details ---
+  const [agent, setAgent] = useState(null);
+  const [loading, setLoading] = useState(true); // Loading for main agent details
+  const [error, setError] = useState(null);     // Error for main agent details
 
-  // --- Find the current agent from the context ---
-  // We memoize this calculation slightly, though not strictly necessary here
-  const agent = React.useMemo(() => {
-    if (agentsLoading || agentsError) return null; // Don't search if main list isn't ready/failed
-    return agents.find(a => String(a.id) === id);
-  }, [agents, agentsLoading, agentsError, id]);
+  // --- State for Reviews ---
+  const [reviews, setReviews] = useState([]); // State for the raw reviews fetched
+  const [reviewsLoading, setReviewsLoading] = useState(false); // Loading state specifically for reviews
+  const [reviewsError, setReviewsError] = useState(null);     // Error state specifically for reviews
 
-  // --- useEffect Hook to Fetch Reviews based on agent's DID ---
+  // --- Effect 1: Fetch Agent Details based on ID ---
   useEffect(() => {
-    // Only proceed if we have found the agent and it has a 'did' property
-    if (!agent?.did) {
-      // If no agent or no DID, clear any existing reviews/errors (e.g., navigating from one detail page to another)
+    if (!id) {
+      setError("No agent ID provided in URL.");
+      setLoading(false);
+      return;
+    }
+    const controller = new AbortController();
+    const signal = controller.signal;
+    const fetchAgentDetail = async () => {
+      setLoading(true);
+      setError(null);
+      setAgent(null);
+      try {
+        const response = await apiClient.get(`/api/agents/${id}`, { signal });
+        if (response.data) {
+          setAgent(response.data);
+        } else {
+          throw new Error(`No data received for agent ID: ${id}`);
+        }
+      } catch (err) {
+        if (axios.isCancel(err) || signal.aborted) {
+          console.log('Agent detail fetch cancelled/aborted');
+        } else if (!signal.aborted) {
+          console.error(`Error fetching details for agent ${id}:`, err);
+          let errMsg = err.message || 'Failed to load agent details.';
+          if (err.response && err.response.status === 404) {
+            errMsg = `Sorry, we couldn't find an agent with the ID: ${id}`;
+          } else {
+             errMsg = err.response?.data?.message || errMsg;
+          }
+          setError(errMsg);
+          setAgent(null);
+        }
+      } finally {
+        if (!signal.aborted) setLoading(false);
+      }
+    };
+    fetchAgentDetail();
+    return () => controller.abort();
+  }, [id]); // Re-run only if ID changes
+
+  // --- Effect 2: Fetch Reviews based on Agent's DID (runs AFTER agent details are loaded) ---
+  useEffect(() => {
+    // Only proceed if we have the agent object and it has a 'did'
+    if (agent?.did) {
+      const controller = new AbortController();
+      const signal = controller.signal;
+
+      const fetchReviews = async () => {
+        setReviewsLoading(true);
+        setReviewsError(null);
+        setReviews([]); // Clear previous reviews
+
+        try {
+          const encodedDid = encodeURIComponent(agent.did);
+          const reviewsApiUrl = `/api/ratings/by-did?did=${encodedDid}`; // Relative path using apiClient
+
+          const response = await apiClient.get(reviewsApiUrl, { signal });
+
+          if (response.data && Array.isArray(response.data.items)) {
+            setReviews(response.data.items); // Store the fetched reviews
+          } else {
+            console.error("Unexpected API response format for reviews:", response.data);
+            setReviewsError("Received an unexpected format for reviews.");
+            setReviews([]);
+          }
+        } catch (err) {
+          if (axios.isCancel(err) || signal.aborted) {
+            console.log('Review fetch cancelled/aborted');
+          } else if (!signal.aborted) {
+            console.error(`Error fetching reviews for DID ${agent.did}:`, err);
+            const msg = err.response?.data?.message || err.message || 'Failed to fetch reviews.';
+            setReviewsError(msg);
+            setReviews([]);
+          }
+        } finally {
+          if (!signal.aborted) setReviewsLoading(false);
+        }
+      };
+
+      fetchReviews();
+
+      // Cleanup for this effect
+      return () => controller.abort();
+    } else {
+      // If no agent.did, ensure reviews state is cleared
       setReviews([]);
       setReviewsLoading(false);
       setReviewsError(null);
-      return; // Exit the effect
     }
+  }, [agent?.did]); // Dependency: Run when agent.did becomes available/changes
 
-    // Create an AbortController for cleanup
-    const controller = new AbortController();
-    const signal = controller.signal;
 
-    const fetchReviews = async () => {
-      setReviewsLoading(true);
-      setReviewsError(null);
-      setReviews([]); // Clear previous reviews before fetching new ones
-
-      try {
-        // URL-encode the DID for the query parameter
-        const encodedDid = encodeURIComponent(agent.did);
-        const apiUrl = `${API_BASE_URL}/api/ratings/by-did?did=${encodedDid}`;
-
-        const response = await axios.get(apiUrl, {
-          headers: { 'ngrok-skip-browser-warning': 'true' }, // Header for Ngrok
-          signal: signal // Pass the signal to axios
-        });
-
-        // Check response structure and update state
-        if (response.data && Array.isArray(response.data.items)) {
-          setReviews(response.data.items);
-        } else {
-          // Handle unexpected response format
-          console.error("Unexpected API response format for reviews:", response.data);
-          setReviewsError("Received an unexpected format for reviews.");
-          setReviews([]);
-        }
-
-      } catch (err) {
-        // Ignore abort errors
-        if (axios.isCancel(err)) {
-          console.log('Review fetch cancelled');
-          return;
-        }
-        // Handle other errors
-        console.error("Error fetching reviews:", err);
-        const msg = err.response?.data?.message || err.message || 'Failed to fetch reviews.';
-        setReviewsError(msg);
-        setReviews([]); // Clear reviews on error
-      } finally {
-        // Only set loading to false if the request wasn't aborted
-        // Note: Axios cancellation throws an error, so this check might be redundant
-        // if the catch block handles isCancel correctly, but added for clarity.
-         if (!signal.aborted) {
-             setReviewsLoading(false);
-         }
+  // --- Filter reviews to get unique ones based on 'hash' (like in Modal) ---
+  const uniqueReviews = useMemo(() => {
+    if (!reviews || reviews.length === 0) return [];
+    const seenHashes = new Set();
+    return reviews.filter(review => {
+      if (review.hash && !seenHashes.has(review.hash)) {
+        seenHashes.add(review.hash);
+        return true;
       }
-    };
-
-    fetchReviews();
-
-    // Cleanup function: Abort the request if component unmounts or agent.did changes
-    return () => {
-      controller.abort();
-    };
-  }, [agent?.did]); // Dependency: Re-run effect if agent.did changes
-
+      return false;
+    });
+  }, [reviews]); // Re-filter when the raw reviews array changes
 
   // --- Render Helper for Stars ---
   const renderStars = (score) => {
@@ -104,42 +134,41 @@ const Detail = () => {
     return "★".repeat(validScore) + "☆".repeat(5 - validScore);
   };
 
-  // --- Main Component Render Logic ---
+  // --- Render Logic ---
 
-  // Handle loading state for the initial agent list
-  if (agentsLoading) {
+  // Handle loading state for the main agent details
+  if (loading) {
     return <div style={{ padding: '20px' }}>Loading agent details...</div>;
   }
 
-  // Handle error state for the initial agent list
-  if (agentsError) {
-    return <div style={{ color: 'red', padding: '20px' }}>Error loading agent data: {agentsError}</div>;
-  }
-
-  // Handle case where agent wasn't found in the list
-  if (!agent) {
+  // Handle error state for fetching main agent details
+  if (error) {
     return (
       <div style={{ padding: '20px' }}>
-        <h2>Agent Not Found</h2>
-        <p>Sorry, we couldn't find an agent with the ID: {id}</p>
+        <h2>{error.includes("couldn't find") ? "Agent Not Found" : "Error"}</h2>
+        <p style={{ color: 'red' }}>{error}</p>
       </div>
     );
   }
 
-  // --- Render the main agent details AND the reviews section ---
+  // Handle case where loading is done, no error, but agent is still null
+  if (!agent) {
+     return <div style={{ padding: '20px' }}>Agent data could not be loaded.</div>;
+  }
+
+  // Render the main agent details + the reviews section
   return (
     <div className="agent-detail-page" style={{ padding: '20px' }}>
-      {/* --- Agent Detail Section (as before) --- */}
+      {/* --- Agent Detail Section --- */}
       <div className="agent-detail">
-         {/* Agent Image */}
          {agent.img_url && (
           <img
-            src={`${API_BASE_URL}${agent.img_url}`}
-            alt={`${agent.name || 'Agent'} icon`}
-            style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover', marginBottom: '20px', border: '3px solid #eee' }}
-            onError={(e) => { e.target.onerror = null; e.target.src = "/image/images.jpeg"; }}
-          />
-         )}
+             src={`${apiClient.defaults.baseURL || ''}${agent.img_url}`} // Use base URL from apiClient
+             alt={`${agent.name || 'Agent'} icon`}
+             style={{ width: '120px', height: '120px', borderRadius: '50%', objectFit: 'cover', marginBottom: '20px', border: '3px solid #eee' }}
+             onError={(e) => { e.target.onerror = null; e.target.src = "/image/images.jpeg"; }}
+           />
+          )}
         <h2>{agent.name || 'Unnamed Agent'}</h2>
         <p>{agent.description || 'No description provided.'}</p>
         <div className="agent-info" style={{ margin: '20px 0', padding: '15px', border: '1px solid #ddd', borderRadius: '8px', backgroundColor: '#f9f9f9' }}>
@@ -152,12 +181,10 @@ const Detail = () => {
           <p>
             <strong>Price:</strong> ${typeof agent.price_usd === 'number' ? agent.price_usd.toFixed(2) : 'N/A'} per hour
           </p>
-          {/* Displaying DID for reference */}
-          {/* <p><strong>DID:</strong> {agent.did || 'N/A'}</p> */}
         </div>
       </div>
 
-      {/* --- Reviews Section (Now Dynamic) --- */}
+       {/* --- Reviews Section (Now Fetches and Displays) --- */}
       <div className="reviews-section" style={{ marginTop: '30px' }}>
         <h3>Reviews</h3>
         {/* Conditional rendering based on reviews loading/error state */}
@@ -166,21 +193,21 @@ const Detail = () => {
         {reviewsError && <p style={{ color: 'red' }}>Error loading reviews: {reviewsError}</p>}
 
         {!reviewsLoading && !reviewsError && (
-          reviews.length > 0 ? (
-            // Map over the fetched reviews
-            reviews.map((review) => (
-              <div className="review" key={review.hash || review.timestamp} style={{ borderBottom: '1px dashed #ccc', paddingBottom: '15px', marginBottom: '15px' }}>
+          // Use the filtered uniqueReviews array
+          uniqueReviews.length > 0 ? (
+            uniqueReviews.map((review) => (
+              // Use review.hash as key (assuming it should be unique per entry after filtering)
+              <div className="review" key={review.hash} style={{ borderBottom: '1px dashed #ccc', paddingBottom: '15px', marginBottom: '15px' }}>
                 <p><strong>Rating:</strong> {renderStars(review.score)}</p>
                 <p>{review.comment || 'No comment provided.'}</p>
                 <p style={{ fontSize: '0.8em', color: '#777' }}>
                   Date: {review.timestamp ? new Date(review.timestamp).toLocaleDateString() : 'N/A'}
-                  {/* Display User ID if available, otherwise anonymous */}
-                  {/* by {review.user_id || 'Anonymous'} */}
+                   {/* You could add user ID if it becomes available: by {review.user_id || 'Anonymous'} */}
                 </p>
               </div>
             ))
           ) : (
-            // Message when loading is finished, no error, but no reviews found
+            // Message when loading is finished, no error, but no unique reviews found
             <p>No reviews available yet for this agent.</p>
           )
         )}

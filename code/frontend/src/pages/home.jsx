@@ -5,10 +5,11 @@ import Agents from "../component/agents"; // Still needed for the Modal componen
 // if the only reason was filtering search results, but other parts of Home might use it.
 // Keep it if needed, remove if not. Let's keep it for now just in case.
 import { useAgentsContext } from '../context';
+import { API_BASE_URL } from '../api/axiosInstance';
+
 import axios from 'axios';
 
 // TODO: Move to environment variable
-const API_BASE_URL = "https://cec0-107-200-17-1.ngrok-free.app";
 
 const Home = () => {
   // === State Variables ===
