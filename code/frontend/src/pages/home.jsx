@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'; // Removed useMemo as it's no longer needed here
+import React, { useState } from 'react'; // Removed useMemo as it's no longer needed here
 import Modal from "../component/modal"; // Import the Modal component
-import Agents from "../component/agents"; // Still needed for the Modal component
 // NOTE: useAgentsContext might not be strictly needed *in this file* anymore
 // if the only reason was filtering search results, but other parts of Home might use it.
 // Keep it if needed, remove if not. Let's keep it for now just in case.
@@ -20,7 +19,7 @@ const Home = () => {
   const [searchError, setSearchError] = useState(null);
 
   // Get context data - might still be needed if Home renders other things using it
-  const { agents: allAgents, loading: agentsLoading, error: agentsError } = useAgentsContext();
+  const { loading: agentsLoading, error: agentsError } = useAgentsContext();
 
   // === Event Handlers ===
   const handleSearch = async () => {

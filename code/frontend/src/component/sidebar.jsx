@@ -28,21 +28,6 @@ const Sidebar = () => {
         >
           <i className="fas fa-bars"></i>
         </button>
-
-        <form className="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
-          <div className="input-group input-group-sm">
-            <input
-              className="form-control"
-              type="text"
-              placeholder="Search..."
-              aria-label="Search"
-              aria-describedby="btnNavbarSearch"
-            />
-            <button className="btn btn-primary" id="btnNavbarSearch" type="button">
-              <i className="fas fa-search"></i>
-            </button>
-          </div>
-        </form>
       </nav>
 
       {/* Sidenav + Content */}
