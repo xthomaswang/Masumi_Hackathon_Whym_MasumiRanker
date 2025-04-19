@@ -1,0 +1,402 @@
+[
+  {
+    "name": "FinanceAdvisor-1",
+    "description": "Real‑time stock quotes and buy/sell recommendations.",
+    "did": "did:masumi:64588059-4077-4bc6-8bc5-7227d1078a79",
+    "id": "5235cf72-fa2a-4e61-b9d5-42a85dd2169e",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/1"
+  },
+  {
+    "name": "FinanceAdvisor-2",
+    "description": "Macro‑economic indicator analysis and strategy suggestions.",
+    "did": "did:masumi:603811c9-897d-48e7-9fdc-dec7814126db",
+    "id": "0428b0f7-d55d-4463-87e5-6bf0cf733a52",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/2"
+  },
+  {
+    "name": "FinanceAdvisor-3",
+    "description": "Forex pair forecasting and risk alerts.",
+    "did": "did:masumi:ab1f1655-7f15-4abc-8234-29fec50d63df",
+    "id": "fc39c0ab-4a5c-4f0e-80e3-7c418dddd687",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/3"
+  },
+  {
+    "name": "FinanceAdvisor-4",
+    "description": "Cryptocurrency sentiment analysis and trade signals.",
+    "did": "did:masumi:37913115-53bc-43a3-ad40-e99c80513452",
+    "id": "6bb6be8c-d04d-4df2-89ca-2b5c573699f6",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/4"
+  },
+  {
+    "name": "FinanceAdvisor-5",
+    "description": "ETF portfolio construction and optimization advice.",
+    "did": "did:masumi:a4ce1caa-348d-40f5-a984-e2b36c435cc7",
+    "id": "c458d22c-36a0-4d2e-8ff7-187fe70c2ef4",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/5"
+  },
+  {
+    "name": "FinanceAdvisor-6",
+    "description": "Bond yield curve analysis and investment suggestions.",
+    "did": "did:masumi:dc0e0e24-6122-4ab8-93c5-44943d514b6c",
+    "id": "2fe57ea0-b259-4224-85d6-bfc8027964a0",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/6"
+  },
+  {
+    "name": "FinanceAdvisor-7",
+    "description": "IPO research and subscription strategy.",
+    "did": "did:masumi:b756cd87-b080-4fde-9cc2-0484b45929c3",
+    "id": "03cf7187-c352-4a59-803d-f90a5275b899",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/7"
+  },
+  {
+    "name": "FinanceAdvisor-8",
+    "description": "Fundamental analysis of company financials and valuation.",
+    "did": "did:masumi:f6ff9bdd-3dfb-4aa4-920c-f409ea754e00",
+    "id": "42410e5d-b857-4bd6-b638-63079bc141d6",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/8"
+  },
+  {
+    "name": "FinanceAdvisor-9",
+    "description": "Tax optimization and compliance guidance.",
+    "did": "did:masumi:fe0ec862-bbe6-4918-b9a1-2a4179b4b4c3",
+    "id": "12d1fe48-da04-4fa2-8a13-0a52f660f714",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/9"
+  },
+  {
+    "name": "FinanceAdvisor-10",
+    "description": "Retirement planning and cash‑flow simulation.",
+    "did": "did:masumi:ec24f08b-27bb-4f2b-8f66-eba1c60a63d5",
+    "id": "851a8f4f-a670-40d5-8838-4f83710dc2e1",
+    "category": "FinanceAdvisor",
+    "url": "https://api.fincorp.ai/finance/10"
+  },
+  {
+    "name": "HealthAssistant-1",
+    "description": "Symptom checker and triage advice.",
+    "did": "did:masumi:2546c050-32e2-449f-b90e-9072ffeacfdb",
+    "id": "c495a038-b416-4bdb-9023-c7047834f883",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/1"
+  },
+  {
+    "name": "HealthAssistant-2",
+    "description": "Personalized nutrition and meal planning.",
+    "did": "did:masumi:a92e0e1f-202f-470d-a2bb-09dc1c04f941",
+    "id": "243e3115-0375-4ca1-9961-69565dc5e762",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/2"
+  },
+  {
+    "name": "HealthAssistant-3",
+    "description": "Workout routines and fitness coaching.",
+    "did": "did:masumi:ed0117a2-6ab8-4f31-8f1e-9c7988233208",
+    "id": "bf6dd534-74a4-4a98-9706-46bd24d7d1bd",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/3"
+  },
+  {
+    "name": "HealthAssistant-4",
+    "description": "Medication reminders and dosage management.",
+    "did": "did:masumi:cbb0b843-388f-432b-b2fa-510c96b3b7d2",
+    "id": "16c53fa0-9771-4b96-a411-575681996e60",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/4"
+  },
+  {
+    "name": "HealthAssistant-5",
+    "description": "Mental health support and mood analysis.",
+    "did": "did:masumi:c65ab7c1-dce0-4bb8-8233-d0688538b381",
+    "id": "b0f63d8f-c1fd-4437-a0db-caa356088690",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/5"
+  },
+  {
+    "name": "HealthAssistant-6",
+    "description": "Chronic disease monitoring and management (e.g., diabetes).",
+    "did": "did:masumi:a5c19876-2923-4d64-8576-644e65299bb5",
+    "id": "fdd43700-f77a-495e-b12c-afa1e9d95a62",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/6"
+  },
+  {
+    "name": "HealthAssistant-7",
+    "description": "Telemedicine appointment scheduling.",
+    "did": "did:masumi:f863abd3-a732-4d0f-9dc2-153bc0412979",
+    "id": "bbb7bec0-9a50-45ef-bc17-c12ec1a9201d",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/7"
+  },
+  {
+    "name": "HealthAssistant-8",
+    "description": "Lab report interpretation and recommendations.",
+    "did": "did:masumi:42770b31-4762-4e38-92c3-cbdb587aeff7",
+    "id": "0b17df87-c254-4f3b-ae5f-e1e21aa8d3bf",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/8"
+  },
+  {
+    "name": "HealthAssistant-9",
+    "description": "Sleep quality tracking and improvement tips.",
+    "did": "did:masumi:2bd0affb-6e43-4f29-908a-344a4e99c137",
+    "id": "d6361ba1-379c-425d-a029-01e95d4c77b7",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/9"
+  },
+  {
+    "name": "HealthAssistant-10",
+    "description": "Vaccination and check‑up reminders.",
+    "did": "did:masumi:ada75340-79c3-4075-8ca4-62ae7e706045",
+    "id": "a37df90c-b27d-4eba-baef-40ba34e595c4",
+    "category": "HealthAssistant",
+    "url": "https://api.healthai.ai/health/10"
+  },
+  {
+    "name": "TravelPlanner-1",
+    "description": "Flight search and price comparison.",
+    "did": "did:masumi:1b5ea23a-7fb0-497f-a4a6-af9dc4675de0",
+    "id": "0443ba5d-a0c8-4065-af85-78985df4e373",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/1"
+  },
+  {
+    "name": "TravelPlanner-2",
+    "description": "Hotel recommendations based on preferences and budget.",
+    "did": "did:masumi:ae871c39-c444-4bb9-b37e-2384358916b1",
+    "id": "d6d4092a-c6a4-4e95-bb06-255667747239",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/2"
+  },
+  {
+    "name": "TravelPlanner-3",
+    "description": "Personalized daily itinerary generator.",
+    "did": "did:masumi:4b06c4ae-3d01-4d04-bae8-66c228ffc0b8",
+    "id": "3a2354b9-2093-40e5-8f7c-aa8fde1fe8ae",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/3"
+  },
+  {
+    "name": "TravelPlanner-4",
+    "description": "Local transport options and booking.",
+    "did": "did:masumi:83a10837-0762-4270-a6b7-a114f66e79e9",
+    "id": "1fcbe121-dae5-4457-9a53-e8737159719d",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/4"
+  },
+  {
+    "name": "TravelPlanner-5",
+    "description": "Budget planning and expense tracking.",
+    "did": "did:masumi:d2d11c21-8547-4ae9-8aa7-24b49b7baa7e",
+    "id": "6d8e3447-99ec-45b3-bb66-b9f8c7794084",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/5"
+  },
+  {
+    "name": "TravelPlanner-6",
+    "description": "Activity and attraction suggestions.",
+    "did": "did:masumi:1cbdab47-5fca-4e99-a557-5f3b7fed6882",
+    "id": "db61b11a-61a5-4291-abd3-7c39dfddee49",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/6"
+  },
+  {
+    "name": "TravelPlanner-7",
+    "description": "7‑day weather forecast for any destination.",
+    "did": "did:masumi:bf7a7083-4333-4fc2-8afa-54ffb25f4c59",
+    "id": "3b784673-0956-4344-b1c0-65fa7f2ee696",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/7"
+  },
+  {
+    "name": "TravelPlanner-8",
+    "description": "Basic language translation for travelers.",
+    "did": "did:masumi:8ca2107a-7ce5-469a-8d7d-6254d5d244ed",
+    "id": "f443f4f2-4eb8-44ff-a81f-90f38856cf29",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/8"
+  },
+  {
+    "name": "TravelPlanner-9",
+    "description": "Visa and entry requirement information.",
+    "did": "did:masumi:33ac30f5-6380-49c0-b7d6-9df4df7018f8",
+    "id": "6b5a7b72-4596-458f-a56b-2a2df5329091",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/9"
+  },
+  {
+    "name": "TravelPlanner-10",
+    "description": "Travel health and vaccination guidance.",
+    "did": "did:masumi:612a2bc9-7538-4a79-bd2f-7815d6f0971b",
+    "id": "19d2a90f-8118-4b9b-b49c-443a1244910d",
+    "category": "TravelPlanner",
+    "url": "https://api.tripwise.ai/travel/10"
+  },
+  {
+    "name": "CodeAssistant-1",
+    "description": "Generates code snippets in multiple languages.",
+    "did": "did:masumi:d3a39241-3d41-47c9-95ca-a2f0320df41b",
+    "id": "b5bba6cf-9dcc-4bbe-ae39-f2a46ffa6747",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/1"
+  },
+  {
+    "name": "CodeAssistant-2",
+    "description": "Automatically finds bugs in code.",
+    "did": "did:masumi:beda174f-0af7-49e8-9e9e-77574e5723d4",
+    "id": "5474f79b-dc44-4dcb-947e-cfa721197801",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/2"
+  },
+  {
+    "name": "CodeAssistant-3",
+    "description": "Explains code functionality in plain English.",
+    "did": "did:masumi:ad4478a8-e483-4402-9b8b-d444d02d947a",
+    "id": "b141034f-20c6-4d73-a09c-f5d7e10f6f8e",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/3"
+  },
+  {
+    "name": "CodeAssistant-4",
+    "description": "Refactors code for readability and performance.",
+    "did": "did:masumi:c32627f2-f18a-472a-9256-09a89259ad00",
+    "id": "7313c8bf-94d7-4bbc-b397-590710618d52",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/4"
+  },
+  {
+    "name": "CodeAssistant-5",
+    "description": "Generates unit tests for given functions.",
+    "did": "did:masumi:e7b09e2d-00c5-4b55-bf2d-ed5c35ce620b",
+    "id": "a687e42f-c754-4d2d-b1fc-2b61cb983a37",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/5"
+  },
+  {
+    "name": "CodeAssistant-6",
+    "description": "Performance tuning suggestions for code.",
+    "did": "did:masumi:fa2cfeb9-604e-43e3-a80f-97cb6b0a9688",
+    "id": "2fb7f1c9-c087-428e-b5d6-4667a4791d04",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/6"
+  },
+  {
+    "name": "CodeAssistant-7",
+    "description": "Integrates third‑party APIs into codebase.",
+    "did": "did:masumi:9e3fc39c-d3db-4182-99dc-aae16e844a4d",
+    "id": "61917270-ba86-4409-8b47-854785530169",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/7"
+  },
+  {
+    "name": "CodeAssistant-8",
+    "description": "Automatically generates code documentation.",
+    "did": "did:masumi:58b758d0-a50a-42d0-9abe-f2647d2f51cd",
+    "id": "b01816d4-570b-492a-825f-ad1e6bef861c",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/8"
+  },
+  {
+    "name": "CodeAssistant-9",
+    "description": "Converts code from one language to another.",
+    "did": "did:masumi:4450e06a-9151-4aa3-ad2d-f614346cecb5",
+    "id": "1934e1e9-8c73-4d59-9740-ad742f2ad58c",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/9"
+  },
+  {
+    "name": "CodeAssistant-10",
+    "description": "Security audit and vulnerability detection.",
+    "did": "did:masumi:597fccb5-b24c-4820-bc09-7153f6291a26",
+    "id": "910a777a-0345-4fad-8850-3bca627a91a7",
+    "category": "CodeAssistant",
+    "url": "https://api.devbuddy.ai/code/10"
+  },
+  {
+    "name": "EducationTutor-1",
+    "description": "Step‑by‑step math problem solver.",
+    "did": "did:masumi:7e65fc5f-146d-493d-a484-80bb84f03bf7",
+    "id": "61963161-ea8c-4869-959d-aac9d696cb39",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/1"
+  },
+  {
+    "name": "EducationTutor-2",
+    "description": "Concept explanations in physics with examples.",
+    "did": "did:masumi:0e21c8dc-9fb2-4df2-a4ab-1375286ae738",
+    "id": "1b379d42-36a2-412f-b33f-dc20ce07da87",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/2"
+  },
+  {
+    "name": "EducationTutor-3",
+    "description": "Grammar and writing feedback for essays.",
+    "did": "did:masumi:2f1b78b7-7f26-4459-9006-e4f5ac76641b",
+    "id": "4cf58860-97e9-4aa1-b7dd-76f29e4e796a",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/3"
+  },
+  {
+    "name": "EducationTutor-4",
+    "description": "Language tutoring with vocabulary and grammar drills.",
+    "did": "did:masumi:41070e02-df11-4ce4-9225-400de3644a2c",
+    "id": "ab9c7759-f819-4a86-b8a8-dbee9e32e370",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/4"
+  },
+  {
+    "name": "EducationTutor-5",
+    "description": "History Q&A with timelines and context.",
+    "did": "did:masumi:acfddb12-2dab-4280-b38e-30f3bd4374ac",
+    "id": "0904e6a0-8bd3-4c52-9d52-b9dde87bee6d",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/5"
+  },
+  {
+    "name": "EducationTutor-6",
+    "description": "Chemistry problem walkthroughs and reaction balancing.",
+    "did": "did:masumi:726c505a-504f-4b04-9265-9666601371d8",
+    "id": "a06a0cc0-7383-4486-88c9-fcfb58e8da64",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/6"
+  },
+  {
+    "name": "EducationTutor-7",
+    "description": "Interactive coding lessons and quizzes.",
+    "did": "did:masumi:6ea7c74a-846e-41e1-8614-040efae75404",
+    "id": "15071605-feec-49d4-a701-d777d50e2f5c",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/7"
+  },
+  {
+    "name": "EducationTutor-8",
+    "description": "Exam preparation with flashcards and practice tests.",
+    "did": "did:masumi:c081a211-010b-429e-a120-106be103b1bd",
+    "id": "3450a116-e01a-4221-adf0-cb57ee7a3133",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/8"
+  },
+  {
+    "name": "EducationTutor-9",
+    "description": "Custom study plan creation based on learning goals.",
+    "did": "did:masumi:d22d0089-2fbd-4ce0-b370-4b5bebd4a2dd",
+    "id": "d1d36b0d-3f9e-4d03-a61d-2e1102abebaf",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/9"
+  },
+  {
+    "name": "EducationTutor-10",
+    "description": "Language flashcards with spaced repetition.",
+    "did": "did:masumi:90fc7379-0222-41ed-86e1-2aff6c6dfd9d",
+    "id": "789da0a2-a8d9-47ce-9faa-868f30625770",
+    "category": "EducationTutor",
+    "url": "https://api.tutorme.ai/edu/10"
+  }
+]

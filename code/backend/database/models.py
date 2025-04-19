@@ -1,32 +1,18 @@
-#/backend/database/models.py
-
-"""
-Database models for MasumiRanker
-────────────────────────────────
-• Agent            – core catalog entry (+ normalized USD price)
-• Rating           – user feedback
-• RegistryEntry    – full Masumi JSON blob (for loss‑less storage)
-• RecommendedAgent – company‑curated “recommended” list (lives in its
-                     own recommend.db so the Ops team can manage it
-                     independently from the main application DB)
-"""
+# backend/database/models.py
 
 from sqlalchemy import (
-    Column,
-    String,
-    Integer,
-    Float,
-    JSON,
-    ForeignKey,
-    Text,
-    DateTime,
+    Column, String, Integer, Float, JSON, ForeignKey, Text, DateTime
 )
 from datetime import datetime
-from backend.database.database import Base
+# Import Base for the main application database
+from .database import Base
+# Import declarative_base to create a separate Base for the recommendation database
+from sqlalchemy.orm import declarative_base
 
+# ---------------- Main Application DB Models (inherit from Base) ----------------
 
-# ────────────────────────── Main Application DB ──────────────────────────
 class Agent(Base):
+    """ Core agent catalog entry in the main database (e.g., masumi.db) """
     __tablename__ = "agents"
     id          = Column(String, primary_key=True, index=True)
     name        = Column(String, nullable=False)
@@ -34,59 +20,53 @@ class Agent(Base):
     description = Column(Text)
     did         = Column(String, unique=True, index=True)
     url         = Column(String)
-    img_url     = Column(String, nullable=True)  
+    img_url     = Column(String, nullable=True) # Corrected attribute name
     price_usd   = Column(Float, default=0.0)
     avg_score   = Column(Float, default=0.0)
     num_ratings = Column(Integer, default=0)
 
 
 class Rating(Base):
-    """One row per user rating/comment."""
+    """ User feedback/rating stored in the main database. """
     __tablename__ = "ratings"
-
     id = Column(Integer, primary_key=True, autoincrement=True)
     agent_id = Column(String, ForeignKey("agents.id"), index=True)
-    user_id = Column(String)                  # may be null
+    user_id = Column(String, nullable=True) # User identifier might be optional
     score = Column(Integer)
-    comment = Column(Text)
-    timestamp = Column(String)                # ISO‑8601
-    hash = Column(String)                     # SHA‑256 for audit
+    comment = Column(Text, nullable=True) # Comments are optional
+    timestamp = Column(String) # Store as ISO 8601 string
+    hash = Column(String) # Optional hash for audit
 
 
 class RegistryEntry(Base):
-    """Full Masumi registry JSON for future reference."""
+    """ Stores the full, original Masumi registry JSON blob in the main database. """
     __tablename__ = "registry"
-
-    id = Column(String, primary_key=True, index=True)  # same as Agent.id
+    id = Column(String, primary_key=True, index=True) # Corresponds to Agent.id/agentIdentifier
     full_json = Column(JSON)
 
 
-# ───────────────────────────── Recommender DB ────────────────────────────
-#
-# This table is NOT stored in the main DB.  It’s created in a dedicated
-# SQLite file (recommend.db) so that Business/Ops teams can edit it without
-# touching the core application data.
-#
-from sqlalchemy.orm import declarative_base
-RecommendBase = declarative_base()
+# ------------- Recommendation DB Models (inherit from RecommendBase) -------------
 
+# Create a separate Base for models residing in recommend.db
+RecommendBase = declarative_base()
 
 class RecommendedAgent(RecommendBase):
     """
-    List of hand‑picked agents that the company wants to highlight.
-    Simple schema:
-    • did    – primary key
-    • rank   – lower number = higher priority (e.g. 1, 2, 3 …)
-    • note   – optional editorial comment
+    Represents the curated list of hand-picked agents.
+    Stored in the separate recommendation database (recommend.db).
     """
-    __tablename__ = "recommended"
+    __tablename__ = "recommended" # Table name for the curated list
 
-    did = Column(String, primary_key=True, index=True)
-    rank = Column(Integer, default=0)
-    note = Column(String, nullable=True)
+    did = Column(String, primary_key=True, index=True) # Agent DID is the primary key
+    rank = Column(Integer, default=0, index=True) # Lower rank means higher priority
+    note = Column(String, nullable=True) # Optional editorial note
 
 class Recommendation(RecommendBase):
-    __tablename__ = "recommendations"
-    id        = Column(Integer, primary_key=True, autoincrement=True)
-    did       = Column(String, nullable=False, index=True)
-    timestamp = Column(DateTime, default=datetime.utcnow)
+    """
+    Represents a log entry for when an agent recommendation action occurs.
+    Stored in the separate recommendation database (recommend.db).
+    """
+    __tablename__ = "recommendations" # Table name for the event log
+    id        = Column(Integer, primary_key=True, autoincrement=True) # Auto-incrementing primary key for the log entry
+    did       = Column(String, nullable=False, index=True) # The DID of the agent recommended
+    timestamp = Column(DateTime, default=datetime.utcnow, index=True) # Timestamp of the recommendation event
