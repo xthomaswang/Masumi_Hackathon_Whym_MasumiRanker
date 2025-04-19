@@ -55,6 +55,7 @@ class AgentOut(BaseModel):
     description: str
     did: str
     url: str
+    price_usd: float              # ← NEW
     avg_score: float
     num_ratings: int
 
