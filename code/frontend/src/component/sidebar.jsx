@@ -67,8 +67,8 @@ const Sidebar = () => {
               </div>
             </div>
             <div style={{ marginLeft: '20px' }} className="sb-sidenav-footer">
-              <div className="small">Hackathon Team</div>
-              W.H.Y.M
+              <div className="small" style={{marginTop:"3rem"}}>Hackathon Team</div><div className="small">              W.H.Y.M
+              </div>
             </div>
           </nav>
         </div>
