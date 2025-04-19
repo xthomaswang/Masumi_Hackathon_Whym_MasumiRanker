@@ -1,47 +1,56 @@
-/* ========== Sidebar ========== */
+/* ========= Layout ========== */
 .sb-nav-fixed {
   position: relative;
 }
 
 #layoutSidenav {
   display: flex;
-  align-items: stretch;
+  min-height: 100vh;
+  position: relative; /* ✅ 为了让 sidebar 用 absolute 不跳出父容器 */
 }
 
 #layoutSidenav_nav {
+  position: absolute;         /* ✅ 完全脱离文档流，不占空间 */
   width: 225px;
-  /* height: 100vh; */
-  flex-shrink: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
   background-color: #212529;
-  color: rgba(255, 255, 255, 0.8);
-  transition: transform 0.3s ease-in-out;
+  color: white;
+  z-index: 1020;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
 }
 
+/* 收起 sidebar */
+.sb-sidenav-toggled #layoutSidenav_nav {
+  transform: translateX(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 主内容区从 margin-left 225px 变成 0，自动居中 */
 #layoutSidenav_content {
   flex-grow: 1;
-  padding: 0 50px;
-  transition: padding-left 0.3s ease-in-out;
-  margin-top: 56px; 
-}
-
-/* ========== Toggle ========== */
-
-.sb-sidenav-toggled #layoutSidenav_nav {
-  transform: translateX(-225px);
+  margin-left: 225px;
+  transition: margin-left 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 .sb-sidenav-toggled #layoutSidenav_content {
-  padding-left: 0;
+  margin-left: 0;
 }
 
-/* ========== 内部导航栏（竖着） ========== */
 
+/* ========= Sidebar Navigation ========== */
 .sb-sidenav .nav {
   display: flex;
   flex-direction: column;
   padding-left: 0;
 }
-
 .sb-sidenav .nav-link {
   display: flex;
   align-items: center;
@@ -52,47 +61,311 @@
   text-decoration: none;
   transition: background-color 0.2s;
 }
-
 .sb-sidenav .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: white;
 }
-
 .sb-sidenav .nav-link.active {
   background-color: rgba(255, 255, 255, 0.2);
   color: white;
   font-weight: bold;
 }
-
 .sb-nav-link-icon {
   width: 20px;
   text-align: center;
 }
 
-.small{
-  align-items: center;
-  justify-content: center;
-}
-footer {
-  width: 100vw;         /* 💡 直接全屏宽 */
-  position: relative;
-  left: -275px;   
-  z-index: 1;
+.sb-sidenav-footer .small {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
 }
 
+/* ========= Main Content ========== */
+main.container-fluid {
+  flex: 1;
+  padding: 2rem;
+}
+
+/* ========= Footer ========== */
+footer.site-footer {
+  width: 100%;
+  background-color: #f8f9fa;
+  padding: 1rem 2rem;
+}
+
+/* ========= Search (Home) 页面 ========== */
+.home-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.home-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.search-textarea {
+  width: 100%;
+  height: 400px;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  resize: none;
+  margin-bottom: 1rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.search-button {
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: #000;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-button:hover {
+  background-color: #333;
+}
 
 
-/* ========== agents component ========== */
-.agents-container {
+/* ========= Categories ========== */
+
+/* 分类标签区域 */
+#categories-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
 }
+
+.categories-tag {
+  padding: 0.5rem 1.2rem;
+  background-color: #e8e6e3;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.categories-tag:hover {
+  background-color: #d3cec9;
+  transform: scale(1.05);
+}
+
+/* 推荐区域标题 */
+.recommended-agents {
+  padding: 1rem 2rem;
+}
+
+.recommended-agents h3 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* 每张 agent 卡片 */
 .agent-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5d3d3;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.2s ease-in-out;
+}
+
+.agent-card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* 左侧：图片 + 文本 */
+.agent-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.agent-left .img img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* agent 信息 */
+.agent-info h4 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.agent-info p {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* 右侧：评分 + 价格 */
+.star-price-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.star-rate {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+
+/* ========== Agent Detail ========== */
+
+.agent-detail {
   background-color: #f8f9fa;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.agent-detail h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.agent-detail p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.agent-info {
+  margin-top: 1rem;
+}
+
+.agent-info p {
+  margin: 0.4rem 0;
+  color: #444;
+}
+
+/* ========== Reviews Section ========== */
+
+.reviews-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  border-top: 1px solid #ddd;
+}
+
+.reviews-section h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.review {
+  background-color: #ffffff;
+  padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: calc(33.333% - 40px); 
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.review p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+
+/* ========== Specific Category ========== */
+.category-page {
+  padding: 2rem;
+}
+
+.category-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.category-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.category-subheading {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+
+/* ========== Contact Us ========== */
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+}
+
+.contact-card {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 3rem 2rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #111;
+}
+
+.contact-subtext {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.contact-signature {
+  margin-top: 2rem;
+  font-style: italic;
+  color: #888;
+  font-size: 0.95rem;
 }

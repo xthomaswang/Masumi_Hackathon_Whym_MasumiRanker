@@ -1,11 +1,10 @@
 import React from 'react';
 import Sidebar from './component/sidebar';
-import Agents from './component/agents';
-import Footer from './component/footer';
 import Home from './pages/home';
 import Detail from './pages/detail';
-import Ranking from './pages/ranking';
+import Categories from './pages/categories';
 import Contact from './pages/contact';
+import Category from './pages/category';
 import {Routes, Route, BrowserRouter} from 'react-router-dom';
 
 import './App.css';
@@ -16,9 +15,10 @@ function App() {
   <Routes>
     <Route path='/' element={<Sidebar />}>
       <Route index element={<Home />} />
-      <Route path='ranking' element={<Ranking />} />
-      <Route path='detail' element={<Detail />} />
+      <Route path='categories' element={<Categories />} />
+      <Route path='detail/:id' element={<Detail />} />
       <Route path='contact' element={<Contact />} />
+      <Route path='category' element={<Category />} />
      
     </Route>
   </Routes>
