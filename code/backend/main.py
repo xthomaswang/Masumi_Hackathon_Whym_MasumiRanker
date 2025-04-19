@@ -18,6 +18,9 @@ import uvicorn
 from backend.database.database import SessionLocal, Base, engine
 from backend.database.models import Agent, Rating, RegistryEntry
 
+from apscheduler.schedulers.background import BackgroundScheduler
+from backend.sync_registry_live import run_sync
+
 # ----------------------------------------------------------------
 app = FastAPI(title="Masumi Ranker API")
 app.add_middleware(
@@ -103,6 +106,12 @@ def payment_info(agentIdentifier:str=Query(..., min_length=3),
         raise HTTPException(404, "Entry not found")
     return {"data":row.full_json, "status":"success"}
 
+@app.on_event("startup")
+def start_scheduler():
+    run_sync()                                  
+    sched = BackgroundScheduler()
+    sched.add_job(run_sync, "interval", minutes=30)  
+    sched.start()
 # -------------------------------------------------------------------
 if __name__ == "__main__":
     uvicorn.run("backend.main:app", host="0.0.0.0", port=8000, reload=True)
