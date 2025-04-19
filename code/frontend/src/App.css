@@ -1,0 +1,98 @@
+/* ========== Sidebar ========== */
+.sb-nav-fixed {
+  position: relative;
+}
+
+#layoutSidenav {
+  display: flex;
+  align-items: stretch;
+}
+
+#layoutSidenav_nav {
+  width: 225px;
+  /* height: 100vh; */
+  flex-shrink: 0;
+  background-color: #212529;
+  color: rgba(255, 255, 255, 0.8);
+  transition: transform 0.3s ease-in-out;
+}
+
+#layoutSidenav_content {
+  flex-grow: 1;
+  padding: 0 50px;
+  transition: padding-left 0.3s ease-in-out;
+  margin-top: 56px; 
+}
+
+/* ========== Toggle ========== */
+
+.sb-sidenav-toggled #layoutSidenav_nav {
+  transform: translateX(-225px);
+}
+
+.sb-sidenav-toggled #layoutSidenav_content {
+  padding-left: 0;
+}
+
+/* ========== 内部导航栏（竖着） ========== */
+
+.sb-sidenav .nav {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+}
+
+.sb-sidenav .nav-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.sb-sidenav .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.sb-sidenav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-weight: bold;
+}
+
+.sb-nav-link-icon {
+  width: 20px;
+  text-align: center;
+}
+
+.small{
+  align-items: center;
+  justify-content: center;
+}
+footer {
+  width: 100vw;         /* 💡 直接全屏宽 */
+  position: relative;
+  left: -275px;   
+  z-index: 1;
+}
+
+
+
+/* ========== agents component ========== */
+.agents-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+.agent-card {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.333% - 40px); 
+}
