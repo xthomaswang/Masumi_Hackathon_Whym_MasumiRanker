@@ -1,0 +1,2577 @@
+{
+  "data": {
+    "entries": [
+      {
+        "name": "FinanceAdvisor-1",
+        "description": "Real\u2011time stock quotes and buy/sell recommendations.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "5235cf72-fa2a-4e61-b9d5-42a85dd2169e",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/1"
+        },
+        "Capability": {
+          "name": "market-analysis",
+          "version": "2.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-1.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "Real\u2011time",
+          "stock"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/1",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "d3fcabcd94cc63f7aebc3ae92a7c33cea1e22a5faa7ca5a9f13ace04e462f781",
+        "did": "did:masumi:64588059-4077-4bc6-8bc5-7227d1078a79",
+        "id": "5235cf72-fa2a-4e61-b9d5-42a85dd2169e",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "FinanceAdvisor-2",
+        "description": "Macro\u2011economic indicator analysis and strategy suggestions.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "0428b0f7-d55d-4463-87e5-6bf0cf733a52",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/2"
+        },
+        "Capability": {
+          "name": "economic-insights",
+          "version": "1.5"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-2.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "Macro\u2011economic",
+          "indicator"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/2",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "4676c5ca7faa593c3bb3d435dcd5c5e62fa3df3bd862b5fc4f26a777a08bfca3",
+        "did": "did:masumi:603811c9-897d-48e7-9fdc-dec7814126db",
+        "id": "0428b0f7-d55d-4463-87e5-6bf0cf733a52",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "FinanceAdvisor-3",
+        "description": "Forex pair forecasting and risk alerts.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "fc39c0ab-4a5c-4f0e-80e3-7c418dddd687",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/3"
+        },
+        "Capability": {
+          "name": "fx-forecast",
+          "version": "1.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-3.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "Forex",
+          "pair"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/3",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "95e9e6ac761571691b065f901f1e6f533c66d494f658ab638c96107a4f148806",
+        "did": "did:masumi:ab1f1655-7f15-4abc-8234-29fec50d63df",
+        "id": "fc39c0ab-4a5c-4f0e-80e3-7c418dddd687",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "FinanceAdvisor-4",
+        "description": "Cryptocurrency sentiment analysis and trade signals.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "6bb6be8c-d04d-4df2-89ca-2b5c573699f6",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/4"
+        },
+        "Capability": {
+          "name": "crypto-insights",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-4.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "Cryptocurrency",
+          "sentiment"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/4",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "8dd223fb278aa2604a6e292cbdaf5d022cd6f29012c9652101b13f1e6bfe86b8",
+        "did": "did:masumi:37913115-53bc-43a3-ad40-e99c80513452",
+        "id": "6bb6be8c-d04d-4df2-89ca-2b5c573699f6",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "FinanceAdvisor-5",
+        "description": "ETF portfolio construction and optimization advice.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "c458d22c-36a0-4d2e-8ff7-187fe70c2ef4",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/5"
+        },
+        "Capability": {
+          "name": "portfolio-builder",
+          "version": "2.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-5.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "ETF",
+          "portfolio"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/5",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "f969550e2cae13cc9ddd6056d69956a31dcbe899dc8053925c8b7a024d2712ed",
+        "did": "did:masumi:a4ce1caa-348d-40f5-a984-e2b36c435cc7",
+        "id": "c458d22c-36a0-4d2e-8ff7-187fe70c2ef4",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "FinanceAdvisor-6",
+        "description": "Bond yield curve analysis and investment suggestions.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "2fe57ea0-b259-4224-85d6-bfc8027964a0",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/6"
+        },
+        "Capability": {
+          "name": "bond-insights",
+          "version": "1.3"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-6.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "Bond",
+          "yield"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/6",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "8270757bd1aff128796e1e097beffbaed0aff7ae5ed7311207978b7e979b32ba",
+        "did": "did:masumi:dc0e0e24-6122-4ab8-93c5-44943d514b6c",
+        "id": "2fe57ea0-b259-4224-85d6-bfc8027964a0",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "FinanceAdvisor-7",
+        "description": "IPO research and subscription strategy.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "03cf7187-c352-4a59-803d-f90a5275b899",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/7"
+        },
+        "Capability": {
+          "name": "ipo-research",
+          "version": "1.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-7.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "IPO",
+          "research"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/7",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "79e13972f6c98c0ac54c7f627502ab244a0f71076f734d34de24c22e7ca4195d",
+        "did": "did:masumi:b756cd87-b080-4fde-9cc2-0484b45929c3",
+        "id": "03cf7187-c352-4a59-803d-f90a5275b899",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "FinanceAdvisor-8",
+        "description": "Fundamental analysis of company financials and valuation.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "42410e5d-b857-4bd6-b638-63079bc141d6",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/8"
+        },
+        "Capability": {
+          "name": "fundamental-analysis",
+          "version": "2.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-8.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "Fundamental",
+          "analysis"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/8",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "b650eb5602205043023b4d2983aaf54b6cbbdbe4536f042af9164829e14f5845",
+        "did": "did:masumi:f6ff9bdd-3dfb-4aa4-920c-f409ea754e00",
+        "id": "42410e5d-b857-4bd6-b638-63079bc141d6",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "FinanceAdvisor-9",
+        "description": "Tax optimization and compliance guidance.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "12d1fe48-da04-4fa2-8a13-0a52f660f714",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/9"
+        },
+        "Capability": {
+          "name": "tax-planning",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-9.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "Tax",
+          "optimization"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/9",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "6438fd7ee7d2a95bab8e5fdce668d4d0a2266387d7cf1626c7f3409df3602dde",
+        "did": "did:masumi:fe0ec862-bbe6-4918-b9a1-2a4179b4b4c3",
+        "id": "12d1fe48-da04-4fa2-8a13-0a52f660f714",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "FinanceAdvisor-10",
+        "description": "Retirement planning and cash\u2011flow simulation.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "851a8f4f-a670-40d5-8838-4f83710dc2e1",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.fincorp.ai/finance/10"
+        },
+        "Capability": {
+          "name": "retirement-planner",
+          "version": "1.4"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "FinCorp",
+        "image": "https://fincorp.ai/images/financeadvisor-10.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://fincorp.ai/privacy",
+        "tags": [
+          "finance",
+          "Retirement",
+          "planning"
+        ],
+        "termsAndCondition": "https://fincorp.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.fincorp.ai/finance/10",
+        "authorOrganization": "FinCorp Analytics",
+        "agentIdentifier": "9268944ec4627bdc8589f99de1f653acab54518d1642b7335ddb2cb1b39ebc07",
+        "did": "did:masumi:ec24f08b-27bb-4f2b-8f66-eba1c60a63d5",
+        "id": "851a8f4f-a670-40d5-8838-4f83710dc2e1",
+        "authorContactEmail": "support@fincorp.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-1",
+        "description": "Symptom checker and triage advice.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "c495a038-b416-4bdb-9023-c7047834f883",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/1"
+        },
+        "Capability": {
+          "name": "symptom-checker",
+          "version": "3.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-1.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/1",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "594adf6c8222acf67d4ac3cab088031d4e543b20df575fae84f555cc403df4f4",
+        "did": "did:masumi:2546c050-32e2-449f-b90e-9072ffeacfdb",
+        "id": "c495a038-b416-4bdb-9023-c7047834f883",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-2",
+        "description": "Personalized nutrition and meal planning.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "243e3115-0375-4ca1-9961-69565dc5e762",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/2"
+        },
+        "Capability": {
+          "name": "nutrition-plan",
+          "version": "2.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-2.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/2",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "71d394335a68fc55f8a706c2198f969e99ae0f1f8099b4ac85ff59211335f1bd",
+        "did": "did:masumi:a92e0e1f-202f-470d-a2bb-09dc1c04f941",
+        "id": "243e3115-0375-4ca1-9961-69565dc5e762",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-3",
+        "description": "Workout routines and fitness coaching.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "bf6dd534-74a4-4a98-9706-46bd24d7d1bd",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/3"
+        },
+        "Capability": {
+          "name": "fitness-coach",
+          "version": "1.8"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-3.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/3",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "1b8629639aa6fbdd93a0d9c223615dec01d9260303cf0c55f4f341fcd40c0c23",
+        "did": "did:masumi:ed0117a2-6ab8-4f31-8f1e-9c7988233208",
+        "id": "bf6dd534-74a4-4a98-9706-46bd24d7d1bd",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-4",
+        "description": "Medication reminders and dosage management.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "16c53fa0-9771-4b96-a411-575681996e60",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/4"
+        },
+        "Capability": {
+          "name": "medication-reminder",
+          "version": "2.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-4.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/4",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "064998f25bbeefe85d810a9d8909fab3db1ccf464aa504c2a955f0592268f845",
+        "did": "did:masumi:cbb0b843-388f-432b-b2fa-510c96b3b7d2",
+        "id": "16c53fa0-9771-4b96-a411-575681996e60",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-5",
+        "description": "Mental health support and mood analysis.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "b0f63d8f-c1fd-4437-a0db-caa356088690",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/5"
+        },
+        "Capability": {
+          "name": "mental-health",
+          "version": "1.3"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-5.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/5",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "f57a1452ff11fa77a3fb6361b214c9c5946efce615242fbd39849166ca128817",
+        "did": "did:masumi:c65ab7c1-dce0-4bb8-8233-d0688538b381",
+        "id": "b0f63d8f-c1fd-4437-a0db-caa356088690",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-6",
+        "description": "Chronic disease monitoring and management (e.g., diabetes).",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "fdd43700-f77a-495e-b12c-afa1e9d95a62",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/6"
+        },
+        "Capability": {
+          "name": "chronic-care",
+          "version": "2.4"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-6.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/6",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "0947c606e929c806132ef5d49b26352e5dea1c93be73c2b9ac80372eb32f0f80",
+        "did": "did:masumi:a5c19876-2923-4d64-8576-644e65299bb5",
+        "id": "fdd43700-f77a-495e-b12c-afa1e9d95a62",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-7",
+        "description": "Telemedicine appointment scheduling.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "bbb7bec0-9a50-45ef-bc17-c12ec1a9201d",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/7"
+        },
+        "Capability": {
+          "name": "telemedicine",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-7.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/7",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "22bc93ae7d2c3d418bec3475d04a8b4704bf0d5dfe323fe9ccfd9b47a17949d2",
+        "did": "did:masumi:f863abd3-a732-4d0f-9dc2-153bc0412979",
+        "id": "bbb7bec0-9a50-45ef-bc17-c12ec1a9201d",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-8",
+        "description": "Lab report interpretation and recommendations.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "0b17df87-c254-4f3b-ae5f-e1e21aa8d3bf",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/8"
+        },
+        "Capability": {
+          "name": "report-analysis",
+          "version": "2.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-8.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/8",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "2e0c2d42679b2583281f12fd3d5dd203b8fe1987743c12f522a6721310d95bbd",
+        "did": "did:masumi:42770b31-4762-4e38-92c3-cbdb587aeff7",
+        "id": "0b17df87-c254-4f3b-ae5f-e1e21aa8d3bf",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-9",
+        "description": "Sleep quality tracking and improvement tips.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "d6361ba1-379c-425d-a029-01e95d4c77b7",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/9"
+        },
+        "Capability": {
+          "name": "sleep-tracker",
+          "version": "1.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-9.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/9",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "95e771c562c7c5608a8cec673849c2ebeca52dec04ae4f5aa7a0edb68523a5da",
+        "did": "did:masumi:2bd0affb-6e43-4f29-908a-344a4e99c137",
+        "id": "d6361ba1-379c-425d-a029-01e95d4c77b7",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "HealthAssistant-10",
+        "description": "Vaccination and check\u2011up reminders.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "a37df90c-b27d-4eba-baef-40ba34e595c4",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.healthai.ai/health/10"
+        },
+        "Capability": {
+          "name": "preventive-care",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "HealthAI",
+        "image": "https://healthai.ai/images/healthassistant-10.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://healthai.ai/privacy",
+        "tags": [
+          "health"
+        ],
+        "termsAndCondition": "https://healthai.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.healthai.ai/health/10",
+        "authorOrganization": "HealthAI Inc.",
+        "agentIdentifier": "55d2adb2ade80ee56f74a8abbbda7f0ec44493f92815377b7c609ebd67805147",
+        "did": "did:masumi:ada75340-79c3-4075-8ca4-62ae7e706045",
+        "id": "a37df90c-b27d-4eba-baef-40ba34e595c4",
+        "authorContactEmail": "support@healthai.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-1",
+        "description": "Flight search and price comparison.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "0443ba5d-a0c8-4065-af85-78985df4e373",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/1"
+        },
+        "Capability": {
+          "name": "flight-search",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-1.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/1",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "ed89a00f8629466a45948b6043a1d22e209b6c27bf83a7b91c84832d60af7257",
+        "did": "did:masumi:1b5ea23a-7fb0-497f-a4a6-af9dc4675de0",
+        "id": "0443ba5d-a0c8-4065-af85-78985df4e373",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-2",
+        "description": "Hotel recommendations based on preferences and budget.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "d6d4092a-c6a4-4e95-bb06-255667747239",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/2"
+        },
+        "Capability": {
+          "name": "hotel-recommendation",
+          "version": "1.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-2.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/2",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "7695894f1dae963dac717e4642f8e2e72275fd143ce051e3eb0a7915e25ae2a3",
+        "did": "did:masumi:ae871c39-c444-4bb9-b37e-2384358916b1",
+        "id": "d6d4092a-c6a4-4e95-bb06-255667747239",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-3",
+        "description": "Personalized daily itinerary generator.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "3a2354b9-2093-40e5-8f7c-aa8fde1fe8ae",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/3"
+        },
+        "Capability": {
+          "name": "itinerary-generator",
+          "version": "2.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-3.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/3",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "9055a48630e28b5c82ae28bf3137da5c628f8c3b00af602440d9ead95335fe59",
+        "did": "did:masumi:4b06c4ae-3d01-4d04-bae8-66c228ffc0b8",
+        "id": "3a2354b9-2093-40e5-8f7c-aa8fde1fe8ae",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-4",
+        "description": "Local transport options and booking.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "1fcbe121-dae5-4457-9a53-e8737159719d",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/4"
+        },
+        "Capability": {
+          "name": "local-transport",
+          "version": "1.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-4.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/4",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "20a48eaddc567b1c765b3c43158fc6413d5a1b5fe21ecb18d5250ec741629ad8",
+        "did": "did:masumi:83a10837-0762-4270-a6b7-a114f66e79e9",
+        "id": "1fcbe121-dae5-4457-9a53-e8737159719d",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-5",
+        "description": "Budget planning and expense tracking.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "6d8e3447-99ec-45b3-bb66-b9f8c7794084",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/5"
+        },
+        "Capability": {
+          "name": "budget-planner",
+          "version": "1.3"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-5.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/5",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "dea1625953361fa5617ea90adc48831bc0f6df95daea8b4e798b7f02598ce121",
+        "did": "did:masumi:d2d11c21-8547-4ae9-8aa7-24b49b7baa7e",
+        "id": "6d8e3447-99ec-45b3-bb66-b9f8c7794084",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-6",
+        "description": "Activity and attraction suggestions.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "db61b11a-61a5-4291-abd3-7c39dfddee49",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/6"
+        },
+        "Capability": {
+          "name": "activity-suggester",
+          "version": "2.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-6.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/6",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "ae72c01c85476fb7399284b6d58e51f51ef4562734d8c6b524c42382a5321ff0",
+        "did": "did:masumi:1cbdab47-5fca-4e99-a557-5f3b7fed6882",
+        "id": "db61b11a-61a5-4291-abd3-7c39dfddee49",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-7",
+        "description": "7\u2011day weather forecast for any destination.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "3b784673-0956-4344-b1c0-65fa7f2ee696",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/7"
+        },
+        "Capability": {
+          "name": "weather-forecast",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-7.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/7",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "80eb47b5f3e0c4454eed73a033781235e03beb1f0d4a4fa440cd14c81af2564f",
+        "did": "did:masumi:bf7a7083-4333-4fc2-8afa-54ffb25f4c59",
+        "id": "3b784673-0956-4344-b1c0-65fa7f2ee696",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-8",
+        "description": "Basic language translation for travelers.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "f443f4f2-4eb8-44ff-a81f-90f38856cf29",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/8"
+        },
+        "Capability": {
+          "name": "phrase-translation",
+          "version": "1.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-8.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/8",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "e8575af5a169905c096f12555e910316acf92cbf8753b2f6d7d90dec9a01547c",
+        "did": "did:masumi:8ca2107a-7ce5-469a-8d7d-6254d5d244ed",
+        "id": "f443f4f2-4eb8-44ff-a81f-90f38856cf29",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-9",
+        "description": "Visa and entry requirement information.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "6b5a7b72-4596-458f-a56b-2a2df5329091",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/9"
+        },
+        "Capability": {
+          "name": "visa-info",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-9.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/9",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "228c98c0f581a2decd336c23f244fa80373efaf22f807d670aaaa92c93c47e59",
+        "did": "did:masumi:33ac30f5-6380-49c0-b7d6-9df4df7018f8",
+        "id": "6b5a7b72-4596-458f-a56b-2a2df5329091",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "TravelPlanner-10",
+        "description": "Travel health and vaccination guidance.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "19d2a90f-8118-4b9b-b49c-443a1244910d",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tripwise.ai/travel/10"
+        },
+        "Capability": {
+          "name": "travel-health",
+          "version": "1.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per query"
+              }
+            ]
+          }
+        },
+        "authorName": "TripWise",
+        "image": "https://tripwise.ai/images/travelplanner-10.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tripwise.ai/privacy",
+        "tags": [
+          "travel"
+        ],
+        "termsAndCondition": "https://tripwise.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tripwise.ai/travel/10",
+        "authorOrganization": "TripWise LLC",
+        "agentIdentifier": "0d23fa07065a53e7ff94c3268e27a3f7b1b3e5f51934611c361a72a7faf07f1b",
+        "did": "did:masumi:612a2bc9-7538-4a79-bd2f-7815d6f0971b",
+        "id": "19d2a90f-8118-4b9b-b49c-443a1244910d",
+        "authorContactEmail": "support@tripwise.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-1",
+        "description": "Generates code snippets in multiple languages.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "b5bba6cf-9dcc-4bbe-ae39-f2a46ffa6747",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/1"
+        },
+        "Capability": {
+          "name": "code-generation",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-1.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/1",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "84d351fc4b349cbb18cae79cc47aafe5b06f200aa9d61213ce09fedcd81cdd16",
+        "did": "did:masumi:d3a39241-3d41-47c9-95ca-a2f0320df41b",
+        "id": "b5bba6cf-9dcc-4bbe-ae39-f2a46ffa6747",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-2",
+        "description": "Automatically finds bugs in code.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "5474f79b-dc44-4dcb-947e-cfa721197801",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/2"
+        },
+        "Capability": {
+          "name": "bug-finder",
+          "version": "1.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-2.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/2",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "06e4cd6bd2dddc2b99cfd8d3cb0ca0b669c2e6c6aa231dfd645035b7391d04ef",
+        "did": "did:masumi:beda174f-0af7-49e8-9e9e-77574e5723d4",
+        "id": "5474f79b-dc44-4dcb-947e-cfa721197801",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-3",
+        "description": "Explains code functionality in plain English.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "b141034f-20c6-4d73-a09c-f5d7e10f6f8e",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/3"
+        },
+        "Capability": {
+          "name": "code-explanation",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-3.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/3",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "b817d37a4d975608123a92ad0a147e960aed6ff4c071b7993254eea72bb72967",
+        "did": "did:masumi:ad4478a8-e483-4402-9b8b-d444d02d947a",
+        "id": "b141034f-20c6-4d73-a09c-f5d7e10f6f8e",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-4",
+        "description": "Refactors code for readability and performance.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "7313c8bf-94d7-4bbc-b397-590710618d52",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/4"
+        },
+        "Capability": {
+          "name": "refactoring",
+          "version": "1.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-4.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/4",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "739425eb93dbe2a29a25222728655801eb40870618b7cd37c9ab188eee174288",
+        "did": "did:masumi:c32627f2-f18a-472a-9256-09a89259ad00",
+        "id": "7313c8bf-94d7-4bbc-b397-590710618d52",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-5",
+        "description": "Generates unit tests for given functions.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "a687e42f-c754-4d2d-b1fc-2b61cb983a37",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/5"
+        },
+        "Capability": {
+          "name": "test-generator",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-5.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/5",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "fdcd8c7427db2979aa45326a956b62460c2854cdaee7f12f3e65f310f9380c27",
+        "did": "did:masumi:e7b09e2d-00c5-4b55-bf2d-ed5c35ce620b",
+        "id": "a687e42f-c754-4d2d-b1fc-2b61cb983a37",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-6",
+        "description": "Performance tuning suggestions for code.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "2fb7f1c9-c087-428e-b5d6-4667a4791d04",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/6"
+        },
+        "Capability": {
+          "name": "performance-tuning",
+          "version": "1.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-6.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/6",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "897df8795c6aadb3d15145717f13e072b32096e90764c5bded3e54dd1506a423",
+        "did": "did:masumi:fa2cfeb9-604e-43e3-a80f-97cb6b0a9688",
+        "id": "2fb7f1c9-c087-428e-b5d6-4667a4791d04",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-7",
+        "description": "Integrates third\u2011party APIs into codebase.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "61917270-ba86-4409-8b47-854785530169",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/7"
+        },
+        "Capability": {
+          "name": "api-integration",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-7.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/7",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "72a793e7461f82ec52b1d2d6a86edf2e9997f621308a6fff1d82b0e449366ab0",
+        "did": "did:masumi:9e3fc39c-d3db-4182-99dc-aae16e844a4d",
+        "id": "61917270-ba86-4409-8b47-854785530169",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-8",
+        "description": "Automatically generates code documentation.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "b01816d4-570b-492a-825f-ad1e6bef861c",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/8"
+        },
+        "Capability": {
+          "name": "code-documentation",
+          "version": "1.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-8.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/8",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "30eb11f9487446fa5c6ed40cbf80a937ef62d8325562d0ea9d7b57b25209c964",
+        "did": "did:masumi:58b758d0-a50a-42d0-9abe-f2647d2f51cd",
+        "id": "b01816d4-570b-492a-825f-ad1e6bef861c",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-9",
+        "description": "Converts code from one language to another.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "1934e1e9-8c73-4d59-9740-ad742f2ad58c",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/9"
+        },
+        "Capability": {
+          "name": "language-converter",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-9.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/9",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "bf585911e2c95d6af210151cac6b086cae047834eb8ad10fe6d5fdef230def85",
+        "did": "did:masumi:4450e06a-9151-4aa3-ad2d-f614346cecb5",
+        "id": "1934e1e9-8c73-4d59-9740-ad742f2ad58c",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "CodeAssistant-10",
+        "description": "Security audit and vulnerability detection.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "910a777a-0345-4fad-8850-3bca627a91a7",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.devbuddy.ai/code/10"
+        },
+        "Capability": {
+          "name": "security-auditor",
+          "version": "1.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per request"
+              }
+            ]
+          }
+        },
+        "authorName": "DevBuddy",
+        "image": "https://devbuddy.ai/images/codeassistant-10.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://devbuddy.ai/privacy",
+        "tags": [
+          "development"
+        ],
+        "termsAndCondition": "https://devbuddy.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.devbuddy.ai/code/10",
+        "authorOrganization": "DevBuddy Inc.",
+        "agentIdentifier": "00654ebc9e1f20ee7448db9c20394f2eb4755419b3f5f8201cb9c407fd428b35",
+        "did": "did:masumi:597fccb5-b24c-4820-bc09-7153f6291a26",
+        "id": "910a777a-0345-4fad-8850-3bca627a91a7",
+        "authorContactEmail": "support@devbuddy.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-1",
+        "description": "Step\u2011by\u2011step math problem solver.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "61963161-ea8c-4869-959d-aac9d696cb39",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/1"
+        },
+        "Capability": {
+          "name": "math-tutor",
+          "version": "2.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-1.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/1",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "fb3a0347d3370edcaa8ad5c1346d6040a03a2716f1e619d85b02345bc673850c",
+        "did": "did:masumi:7e65fc5f-146d-493d-a484-80bb84f03bf7",
+        "id": "61963161-ea8c-4869-959d-aac9d696cb39",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-2",
+        "description": "Concept explanations in physics with examples.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "1b379d42-36a2-412f-b33f-dc20ce07da87",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/2"
+        },
+        "Capability": {
+          "name": "physics-tutor",
+          "version": "1.5"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-2.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/2",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "e2f7f89e0f4091bd2ec864ded86e0d0fd853193f88486b5ef1d098b00c26534a",
+        "did": "did:masumi:0e21c8dc-9fb2-4df2-a4ab-1375286ae738",
+        "id": "1b379d42-36a2-412f-b33f-dc20ce07da87",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-3",
+        "description": "Grammar and writing feedback for essays.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "4cf58860-97e9-4aa1-b7dd-76f29e4e796a",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/3"
+        },
+        "Capability": {
+          "name": "writing-coach",
+          "version": "1.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-3.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/3",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "950e9a3810b9498a85819cad963594294fbc242c333f8d4b7d32605592058ea4",
+        "did": "did:masumi:2f1b78b7-7f26-4459-9006-e4f5ac76641b",
+        "id": "4cf58860-97e9-4aa1-b7dd-76f29e4e796a",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-4",
+        "description": "Language tutoring with vocabulary and grammar drills.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "ab9c7759-f819-4a86-b8a8-dbee9e32e370",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/4"
+        },
+        "Capability": {
+          "name": "language-tutor",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-4.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/4",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "b6d9df1bb2efeb1c205df6b2704215c0a34b45b71a27f51454b2e4e53ab7c3bf",
+        "did": "did:masumi:41070e02-df11-4ce4-9225-400de3644a2c",
+        "id": "ab9c7759-f819-4a86-b8a8-dbee9e32e370",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-5",
+        "description": "History Q&A with timelines and context.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "0904e6a0-8bd3-4c52-9d52-b9dde87bee6d",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/5"
+        },
+        "Capability": {
+          "name": "history-tutor",
+          "version": "1.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-5.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/5",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "d79b4fdae086c1a5212a164f06c9f3fcd452dd4ca36926df595fb93a6bb2960a",
+        "did": "did:masumi:acfddb12-2dab-4280-b38e-30f3bd4374ac",
+        "id": "0904e6a0-8bd3-4c52-9d52-b9dde87bee6d",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-6",
+        "description": "Chemistry problem walkthroughs and reaction balancing.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "a06a0cc0-7383-4486-88c9-fcfb58e8da64",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/6"
+        },
+        "Capability": {
+          "name": "chemistry-tutor",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-6.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/6",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "52b9da85fb1897b1e293ade9462d838022024b83f3e1d68ad70c2b57bbb18208",
+        "did": "did:masumi:726c505a-504f-4b04-9265-9666601371d8",
+        "id": "a06a0cc0-7383-4486-88c9-fcfb58e8da64",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-7",
+        "description": "Interactive coding lessons and quizzes.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "15071605-feec-49d4-a701-d777d50e2f5c",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/7"
+        },
+        "Capability": {
+          "name": "coding-tutor",
+          "version": "1.2"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-7.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/7",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "ce9b640fdc7eaf1b207df30527f836ab718ca571458b1f93855629afd9be5ece",
+        "did": "did:masumi:6ea7c74a-846e-41e1-8614-040efae75404",
+        "id": "15071605-feec-49d4-a701-d777d50e2f5c",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-8",
+        "description": "Exam preparation with flashcards and practice tests.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "3450a116-e01a-4221-adf0-cb57ee7a3133",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/8"
+        },
+        "Capability": {
+          "name": "flashcard-generator",
+          "version": "1.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-8.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/8",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "8c5720756cb27b91a977b95846b34363f9ec0d09936a242337740e008475dc69",
+        "did": "did:masumi:c081a211-010b-429e-a120-106be103b1bd",
+        "id": "3450a116-e01a-4221-adf0-cb57ee7a3133",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-9",
+        "description": "Custom study plan creation based on learning goals.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "d1d36b0d-3f9e-4d03-a61d-2e1102abebaf",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/9"
+        },
+        "Capability": {
+          "name": "study-plan",
+          "version": "2.0"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-9.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/9",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "d25fa153f5396ef460132776bf8e7fb2c482ae5390b378f773d572ebb557a4bf",
+        "did": "did:masumi:d22d0089-2fbd-4ce0-b370-4b5bebd4a2dd",
+        "id": "d1d36b0d-3f9e-4d03-a61d-2e1102abebaf",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      },
+      {
+        "name": "EducationTutor-10",
+        "description": "Language flashcards with spaced repetition.",
+        "status": "Online",
+        "RegistrySource": {
+          "id": "789da0a2-a8d9-47ce-9faa-868f30625770",
+          "policyId": "",
+          "type": "Web3CardanoV1",
+          "url": "https://api.tutorme.ai/edu/10"
+        },
+        "Capability": {
+          "name": "spaced-repetition",
+          "version": "1.1"
+        },
+        "AgentPricing": {
+          "pricingType": "Fixed",
+          "FixedPricing": {
+            "Amounts": [
+              {
+                "amount": "1",
+                "unit": "USD per session"
+              }
+            ]
+          }
+        },
+        "authorName": "TutorMe",
+        "image": "https://tutorme.ai/images/educationtutor-10.png",
+        "otherLegal": null,
+        "privacyPolicy": "https://tutorme.ai/privacy",
+        "tags": [
+          "education"
+        ],
+        "termsAndCondition": "https://tutorme.ai/terms",
+        "uptimeCheckCount": 0,
+        "uptimeCount": 0,
+        "lastUptimeCheck": "1970-01-01T00:00:00.000Z",
+        "apiBaseUrl": "https://api.tutorme.ai/edu/10",
+        "authorOrganization": "TutorMe LLC",
+        "agentIdentifier": "da637c0384206348bdd14d0774170eef6a458be441d27f305407387a50b27e8e",
+        "did": "did:masumi:90fc7379-0222-41ed-86e1-2aff6c6dfd9d",
+        "id": "789da0a2-a8d9-47ce-9faa-868f30625770",
+        "authorContactEmail": "support@tutorme.ai",
+        "authorContactOther": null,
+        "ExampleOutput": [
+          {
+            "name": "Example Output",
+            "mimeType": "text/plain",
+            "url": ""
+          }
+        ]
+      }
+    ]
+  },
+  "status": "success"
+}
