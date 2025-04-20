@@ -1,31 +1,29 @@
-import React, { useState, useEffect } from 'react'; // Import useState, useEffect
-import Agents from "../component/agents";         // To display the final list
-import apiClient from '../api/axiosInstance';    // Import the configured Axios instance
+// src/component/modal.jsx
+
+import React, { useState, useEffect, useMemo } from 'react'; // Added useMemo just in case, though not strictly needed for this change
+import Agents from "../component/agents";
+import apiClient from '../api/axiosInstance';
 import axios from 'axios';
-// --- Styles (keep as before or move to CSS) ---
+
+// Styles...
 const modalOverlayStyle = { /* ... */ };
 const modalContentStyle = { /* ... */ };
 const closeButtonStyle = { /* ... */ };
-// --- ---
 
-// Updated Modal Component
 const Modal = ({
   isOpen,
   onClose,
-  searchResults, // Renamed prop: Array of basic agent info from search
-  loading: searchLoading, // Loading state of the initial search
-  error: searchError,     // Error state of the initial search
+  searchResults, // Contains objects with { id, did, name, description, score (AI score) }
+  loading: searchLoading,
+  error: searchError,
   query
 }) => {
 
-  // --- State for Detailed Agent Data ---
-  const [detailedAgents, setDetailedAgents] = useState([]);
-  const [detailsLoading, setDetailsLoading] = useState(false); // Loading state for fetching full details
-  const [detailsError, setDetailsError] = useState(null);     // Error state for fetching full details
+  const [detailedAgents, setDetailedAgents] = useState([]); // Will hold objects with full details + AI score
+  const [detailsLoading, setDetailsLoading] = useState(false);
+  const [detailsError, setDetailsError] = useState(null);
 
-  // --- useEffect to Fetch Full Details when Search Results Arrive ---
   useEffect(() => {
-    // Only run if modal is open, search isn't loading, search had no error, and we have results
     if (isOpen && !searchLoading && !searchError && searchResults && searchResults.length > 0) {
       const controller = new AbortController();
       const signal = controller.signal;
@@ -33,97 +31,84 @@ const Modal = ({
       const fetchAllDetails = async () => {
         setDetailsLoading(true);
         setDetailsError(null);
-        setDetailedAgents([]); // Clear previous detailed results
+        setDetailedAgents([]);
 
-        // Create an array of promises, one for each agent detail request
         const detailPromises = searchResults.map(agentBasicInfo =>
-          apiClient.get(`/api/agents/${agentBasicInfo.id}`, { // Use apiClient and relative path
-             signal: signal
-             // No need for ngrok header here if it's in apiClient config
-          }).then(response => response.data) // Extract data on success
+          apiClient.get(`/api/agents/${agentBasicInfo.id}`, { signal })
+            .then(response => response.data) // Gets full details (like avg_score, img_url, etc but NO AI score)
             .catch(err => {
-                // Log individual errors but don't stop Promise.allSettled
                 console.error(`Failed to fetch details for agent ${agentBasicInfo.id}:`, err);
-                // Return an error marker or null to indicate failure for this specific agent
                 return { error: true, id: agentBasicInfo.id, message: err.message };
             })
         );
 
         try {
-           // Wait for all promises to settle (either succeed or fail)
-           // Using Promise.allSettled might be safer if one request fails
-           // const results = await Promise.allSettled(detailPromises);
-           // const successfulAgents = results
-           //      .filter(result => result.status === 'fulfilled' && result.value && !result.value.error)
-           //      .map(result => result.value);
-
-           // Using Promise.all - simpler if you expect most to succeed
-           // It will reject immediately if ANY promise fails
            const fetchedAgents = await Promise.all(detailPromises);
+           // successfulAgentsBasic now contains agent objects fetched from /api/agents/{id}
+           // These likely DO NOT have the AI relevance 'score' property
+           const successfulAgentsBasic = fetchedAgents.filter(agent => agent && !agent.error);
 
-           // Filter out any errors marked in the catch block above (if using .catch within map)
-           const successfulAgents = fetchedAgents.filter(agent => agent && !agent.error);
+           // --- !!! NEW: Merge AI relevance score from searchResults !!! ---
+           // Create a lookup map from the original search results for quick access to AI scores
+           const searchScoreMap = new Map();
+           searchResults.forEach(result => {
+               // Ensure score is a number before storing
+               if (result.id && typeof result.score === 'number') {
+                   searchScoreMap.set(result.id, result.score);
+               }
+           });
 
-           setDetailedAgents(successfulAgents); // Update state with successfully fetched full agent details
+           // Map through the successfully fetched detailed agents and add the AI score
+           const mergedAgents = successfulAgentsBasic.map(detailedAgent => {
+               return {
+                   ...detailedAgent, // Keep all fetched details (img_url, avg_score, price_usd etc.)
+                   // Add the 'score' property, taking its value from the original search result via the map
+                   score: searchScoreMap.get(detailedAgent.id) // Will be undefined if not found in map
+               };
+           });
+           // --- End Merge ---
 
-           // Check if some failed
-           const failedCount = fetchedAgents.length - successfulAgents.length;
+           // Now set the state with agents that have BOTH full details AND the AI score
+           setDetailedAgents(mergedAgents);
+
+           const failedCount = detailPromises.length - successfulAgentsBasic.length;
            if (failedCount > 0) {
                setDetailsError(`Could not load details for ${failedCount} agent(s).`);
            }
 
         } catch (err) {
-            // This catch block is primarily for Promise.all if one request fails hard
-            if (axios.isCancel(err)) {
-                 console.log('Detail fetching cancelled');
-                 return;
-            }
+            if (axios.isCancel(err)) { /*...*/ return; }
             console.error("Error fetching one or more agent details:", err);
             setDetailsError("An error occurred while loading agent details.");
-            setDetailedAgents([]); // Clear results on major error
+            setDetailedAgents([]);
         } finally {
-             if (!signal.aborted) {
-                 setDetailsLoading(false);
-             }
+             if (!signal.aborted) { setDetailsLoading(false); }
         }
       };
 
       fetchAllDetails();
-
-      // Cleanup function for the effect
-      return () => {
-        controller.abort();
-      };
-
+      return () => { controller.abort(); };
     } else {
-      // If modal is closed, or search is loading/error, or no search results, clear details state
       setDetailedAgents([]);
       setDetailsLoading(false);
       setDetailsError(null);
     }
-  }, [isOpen, searchLoading, searchError, searchResults]); // Dependencies for the effect
+    // IMPORTANT: Make sure dependencies are correct. Adding searchResults might cause re-runs if its reference changes unnecessarily.
+    // Using a stringified version or just relying on isOpen/searchLoading flags might be more stable if you see infinite loops.
+    // Let's try keeping it for now. If issues arise, we can reconsider.
+  }, [isOpen, searchLoading, searchError, searchResults]);
 
 
-  // --- Render Logic ---
-  if (!isOpen) {
-    return null; // Don't render if not open
-  }
-
-  // Helper function for stars
-  const renderStars = (score) => { /* ... (same as before) ... */ };
-
+  // --- Render Logic (No changes needed below this line) ---
+  if (!isOpen) return null;
+  const renderStars = (score) => { /* ... */ };
 
   return (
-    // Add className instead of style
     <div className="modal-overlay" onClick={onClose}>
-      {/* Add className instead of style */}
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-        {/* Add className instead of style */}
         <button className="modal-close-button" onClick={onClose}>&times;</button>
-
         <h3 style={{ marginTop: 0, marginBottom: '20px' }}>Recommended Agents for: "{query}"</h3>
 
-        {/* ... (rest of the conditional rendering logic for loading, error, agents) ... */}
          {searchLoading && <p>Searching for agents...</p>}
          {searchError && <p style={{ color: 'red' }}>Error: {searchError}</p>}
          {!searchLoading && !searchError && (
@@ -132,6 +117,7 @@ const Modal = ({
              {detailsError && <p style={{ color: 'orange' }}>{detailsError}</p>}
              {!detailsLoading && (
                detailedAgents.length > 0 ? (
+                 // Agents component will now receive agents with the correct 'score' property
                  <Agents agents={detailedAgents} />
                ) : (
                  !detailsError && <p>No specific recommendations found or details could not be loaded.</p>

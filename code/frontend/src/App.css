@@ -181,15 +181,39 @@ footer.site-footer {
 
 /* 每张 agent 卡片 */
 .agent-card {
+  /* ... your existing styles (background, padding, etc.) ... */
+  position: relative; /* Crucial for positioning the panel inside */
+  overflow: hidden;   /* Hides the panel when it's outside */
+  /* Add transition if you want the card itself to animate, e.g., on hover */
+  transition: box-shadow 0.2s ease-in-out; /* Example existing transition */
+}
+
+.score-panel {
+  position: absolute; /* Position relative to the .agent-card */
+  top: 0;
+  right: 0;
+  bottom: 0; /* Or height: 100%; */
+  width: 25%; /* Covers 25% of the card width */
+  background-color: rgba(0, 0, 0, 0.6); /* Example: Semi-transparent dark background */
+  color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #d3f5d4;
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 1rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  transition: all 0.2s ease-in-out;
+  justify-content: center;
+  font-size: 0.9em;
+  font-weight: bold;
+  text-align: center;
+  padding: 5px;
+  box-sizing: border-box;
+
+  /* --- Animation --- */
+  transform: translateX(100%); /* Initially move it completely outside to the right */
+  transition: transform 0.3s ease-in-out; /* Smooth slide transition */
+  pointer-events: none; /* Prevent panel from interfering with clicks on card */
+}
+
+.agent-card:hover .score-panel {
+  transform: translateX(0%); /* Slide it into view (to its natural position) */
+  pointer-events: auto; /* Allow interacting with panel if needed (optional) */
 }
 
 .agent-card:hover {
@@ -305,7 +329,11 @@ footer.site-footer {
 
 /* ========== Specific Category ========== */
 .category-page {
-  padding: 2rem;
+  width: 100%;      /* 新增: 让它优先使用可用宽度 */
+  max-width: 1140px; /* 新增: 限制最大宽度为 1140px (你可以改成你喜欢的值，比如 960px 或 1320px) */
+  margin-left: auto;  /* 新增: 水平居中 */
+  margin-right: auto; /* 新增: 水平居中 */
+  padding: 2rem;      /* 保留你原来的内边距 */
 }
 
 .category-title {

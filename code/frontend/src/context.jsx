@@ -28,7 +28,7 @@ export function AgentsProvider({ children }) {
       try {
         // Use the configured apiClient to make the GET request
         // Base URL and common headers (like ngrok skip) are handled by apiClient
-        const res = await apiClient.get('/api/agents', { // Path relative to baseURL
+        const res = await apiClient.get('/api/agents?page=1&page_size=50', { // Path relative to baseURL
           signal: signal // Pass the abort signal to the request
         });
 
