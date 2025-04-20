@@ -16,6 +16,7 @@ import logging
 import json
 import numpy as np
 import faiss
+
 from sentence_transformers import SentenceTransformer
 from pathlib import Path
 from fastapi import FastAPI
